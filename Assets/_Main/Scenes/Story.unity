@@ -169,9 +169,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   captionText: {fileID: 602024979}
   letterPause: 0.1
-  sound: {fileID: 8300000, guid: 849f5fa7fe21b4d468d1858b6d1eb800, type: 3}
+  sound: {fileID: 8300000, guid: 07ae66b691a7c4097b8b74cdcc617b22, type: 3}
   message: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
+    tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    magna aliqua.
 --- !u!82 &95661325
 AudioSource:
   m_ObjectHideFlags: 0
