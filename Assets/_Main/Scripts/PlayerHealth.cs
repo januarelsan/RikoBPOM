@@ -2,18 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using HutongGames.PlayMaker;
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private Slider healthSlider;
+    [SerializeField] private PlayMakerFSM healthOnSliderFSM;
     [SerializeField] private Image maskerOnHealtImage;
 
     private float health = 100;
     private int masked;
 
+    private bool isHurt;
+
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         
     }
 
@@ -29,6 +35,19 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void Hurting(){
+        isHurt = true;
+        GetComponent<Animator>().SetTrigger("Hurt");
+    }
+
+    public void AfterHurting(){
+        isHurt = false;
+    }
+
+    public bool GetIsHurt(){
+        return isHurt;
+    }
+
     public void AddHealth(float value){        
         health += value;
 
@@ -38,6 +57,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void SubHealth(float value){
 
+        healthOnSliderFSM.SendEvent("PunchScale");
+        
         if(masked > 0){
             health -= value/2;    
         }else{

@@ -21,4 +21,9 @@ public class EnemySmoking : MonoBehaviour
     public void EmittingSmoke(){
         Instantiate(smokeItem, ciggaratePos.position, ciggaratePos.rotation);
     }
+
+    public void Smoking(){
+        GetComponent<Animator>().SetTrigger("Smoking");
+    }
+    
 }
