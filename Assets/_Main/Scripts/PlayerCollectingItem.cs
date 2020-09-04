@@ -17,26 +17,36 @@ public class PlayerCollectingItem : MonoBehaviour
     }
 
     void ApplyEffect(int itemType){
-        
-        switch (itemType)
-        {
-            case 0:
-                Debug.Log("Get Masker");
-                GetComponent<PlayerHealth>().AddMask();
-                break;
-            case 1:
-                Debug.Log("Get Hit");
-                GetComponent<PlayerHealth>().SubHealth(20);
-                GetComponent<PlayerHealth>().Hurting();
-                break;
-            case 2:
-                Debug.Log("Get Medic");
-                GetComponent<PlayerHealth>().AddHealth(20);                
-                break;
-            default:
-                Debug.Log("Zero");
-                break;
-        }        
+        if(!GetComponent<PlayerDash>().GetIsDashing()){
+            switch (itemType)
+            {
+                case 0:
+                    Debug.Log("Get Masker");
+                    GetComponent<PlayerHealth>().AddMask();
+                    AudioOneShooter.Instance.ShootClip(0);
+                    break;
+                case 1:
+                    
+                    Debug.Log("Get Hit");
+                    GetComponent<PlayerHealth>().SubHealth(20);
+                    GetComponent<PlayerHealth>().Hurting();
+                    
+                    break;
+                case 2:
+                    Debug.Log("Get Medic");
+                    GetComponent<PlayerHealth>().AddHealth(20);                
+                    AudioOneShooter.Instance.ShootClip(0);
+                    break;
+                case 3:
+                    Debug.Log("Get Skateboard");
+                    GetComponent<PlayerDash>().Dash();    
+                    AudioOneShooter.Instance.ShootClip(0);            
+                    break;
+                default:
+                    Debug.Log("Zero");
+                    break;
+            }        
+        }
 
         
     }

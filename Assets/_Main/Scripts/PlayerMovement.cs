@@ -21,7 +21,12 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(speed * Time.deltaTime,0,0);
         if(GetComponent<PlayerHealth>().GetIsHurt()){
             speed = 0;
-        }else
+        } else if(GetComponent<PlayerDash>().GetIsDashing()){
+            if(speed < 50)
+                speed += 0.2f;
+            else    
+                speed = 50;
+        } else
         {
             speed = defSpeed;   
         }

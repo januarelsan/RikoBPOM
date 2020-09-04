@@ -5,6 +5,10 @@ using UnityEngine;
 public class MainMusic : MonoBehaviour
 {
     private static MainMusic playerInstance;
+
+    [SerializeField] private AudioClip GameClip;
+    [SerializeField] private AudioClip GeneralClip;
+
     void Awake(){
         DontDestroyOnLoad (this);
             
@@ -18,6 +22,12 @@ public class MainMusic : MonoBehaviour
     void Update(){
         
         // Debug.Log("Music is: " + GameData.Instance.AudioOn);
+
+        if(SceneController.Instance.GetSceneLoaded() == "Game"){
+            GetComponent<AudioSource>().clip = GameClip;
+        }else{
+            GetComponent<AudioSource>().clip = GeneralClip;
+        }
         
         if(GameData.Instance.AudioOn == 0){
             if(GetComponent<AudioSource>().isPlaying)

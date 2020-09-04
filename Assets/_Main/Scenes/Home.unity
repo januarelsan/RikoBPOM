@@ -5746,6 +5746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d787d7736ca2784c8b6f8ca661c20b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameClip: {fileID: 8300000, guid: 95673da772b61304d9d32631e5d5d3f5, type: 3}
+  GeneralClip: {fileID: 8300000, guid: bb0905fdbce48da419047ebbc8785420, type: 3}
 --- !u!1001 &4798822050517066382
 PrefabInstance:
   m_ObjectHideFlags: 0
