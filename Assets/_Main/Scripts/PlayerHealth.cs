@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using HutongGames.PlayMaker;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : Singleton<PlayerHealth>
 {
     [SerializeField] private Slider healthSlider;
     [SerializeField] private PlayMakerFSM healthOnSliderFSM;
@@ -44,9 +44,7 @@ public class PlayerHealth : MonoBehaviour
         isHurt = false;
     }
 
-    public bool GetIsHurt(){
-        return isHurt;
-    }
+    
 
     public void AddHealth(float value){        
         health += value;
@@ -80,6 +78,10 @@ public class PlayerHealth : MonoBehaviour
 
     public void SubMask(){
         masked--;        
+    }
+
+    public bool GetIsHurt(){
+        return isHurt;
     }
 
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jumping : MonoBehaviour
+public class Jumping : Singleton<Jumping>
 {
     public float playerUpwardForce;
 
@@ -25,7 +25,7 @@ public class Jumping : MonoBehaviour
     }
 
     public void Jump(){
-        if(!jumping){
+        if(!jumping && !PlayerSliding.Instance.GetIsSliding() && !PlayerHealth.Instance.GetIsHurt()){
             rb2.AddForce(new Vector3(0,playerUpwardForce,0), ForceMode2D.Impulse);
             GetComponent<Animator>().SetTrigger("Jump");
             jumping = true;
@@ -38,5 +38,9 @@ public class Jumping : MonoBehaviour
         if(col.gameObject.tag == "Ground"){
             jumping = false;
         }
+    }
+
+    public bool GetIsJumping(){
+        return jumping;
     }
 }

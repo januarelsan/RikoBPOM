@@ -39,7 +39,12 @@ public class PlayerCollectingItem : MonoBehaviour
                     break;
                 case 3:
                     Debug.Log("Get Skateboard");
-                    GetComponent<PlayerDash>().Dash();    
+                    GetComponent<PlayerDash>().Dash("Skateboard");    
+                    AudioOneShooter.Instance.ShootClip(0);            
+                    break;
+                case 4:
+                    Debug.Log("Get Sepeda");
+                    GetComponent<PlayerDash>().Dash("Sepeda");    
                     AudioOneShooter.Instance.ShootClip(0);            
                     break;
                 default:
