@@ -76,7 +76,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -241,7 +240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94fc45b82ead7a34ab63fe268f8975ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smokeItem: {fileID: 2752167742614006081, guid: 20c178c396cb83449bbbdfa220dce5fd, type: 3}
+  smokeItem: {fileID: 2752167742614006081, guid: 20c178c396cb83449bbbdfa220dce5fd,
+    type: 3}
   ciggaratePos: {fileID: 5623771454796004447}
 --- !u!1 &5623771456536254781
 GameObject:
@@ -287,7 +287,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.1784592}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -298,5 +298,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 15.297394}
   m_EdgeRadius: 0

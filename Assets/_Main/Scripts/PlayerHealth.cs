@@ -13,7 +13,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private float health = 100;
     private int masked;
 
-    private bool isHurt;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -36,12 +36,12 @@ public class PlayerHealth : Singleton<PlayerHealth>
     }
 
     public void Hurting(){
-        isHurt = true;
+        GetComponent<PlayerState>().SwitchState("Hurt");
         GetComponent<Animator>().SetTrigger("Hurt");
     }
 
     public void AfterHurting(){
-        isHurt = false;
+        GetComponent<PlayerState>().SwitchState("Default");
     }
 
     
@@ -80,9 +80,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         masked--;        
     }
 
-    public bool GetIsHurt(){
-        return isHurt;
-    }
+    
 
 
 

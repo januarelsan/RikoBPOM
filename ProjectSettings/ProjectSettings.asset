@@ -683,7 +683,8 @@ PlayerSettings:
     29: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_0;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER
     30: PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_0;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Android: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}

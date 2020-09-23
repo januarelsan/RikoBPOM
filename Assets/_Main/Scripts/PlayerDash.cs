@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerDash : MonoBehaviour
 {
-    private bool isDashing;
+    
     [SerializeField] private GameObject smokeExplosion;
     // Start is called before the first frame update
     void Start()
@@ -26,15 +26,13 @@ public class PlayerDash : MonoBehaviour
     IEnumerator Dashing(string dashName)
     {
         smokeExplosion.GetComponent<ParticleSystem>().Play();
-        isDashing = true;
+        GetComponent<PlayerState>().SwitchState("Dash");
         GetComponent<Animator>().SetTrigger(dashName);
         yield return new WaitForSeconds(10);
         smokeExplosion.GetComponent<ParticleSystem>().Play();
-        isDashing = false;
+        GetComponent<PlayerState>().SwitchState("Default");
         GetComponent<Animator>().SetTrigger("FinishDash");
     }
 
-    public bool GetIsDashing(){
-        return isDashing;
-    }
+    
 }

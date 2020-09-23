@@ -8,6 +8,9 @@ TagManager:
   - Background
   - CollectibleItem
   - SmokerTrigger
+  - Mafia
+  - PushTrigger
+  - Profesor
   layers:
   - Default
   - TransparentFX

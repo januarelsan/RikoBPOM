@@ -272,7 +272,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0.055, y: 0.055, z: 1}
+          value: {x: 0.06, y: 0.06, z: 1}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerSliding : Singleton<PlayerSliding>
 {
         
-    private bool isSliding;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +19,8 @@ public class PlayerSliding : Singleton<PlayerSliding>
     }
 
     public void Slide(){   
-        if(!isSliding && !Jumping.Instance.GetIsJumping() && !PlayerHealth.Instance.GetIsHurt()){
-            isSliding = true;
+        if(GetComponent<PlayerState>().GetState().ToString() == "Run"){
+            GetComponent<PlayerState>().SwitchState("Slide");
             GetComponent<Animator>().SetTrigger("Slide");                    
             GetComponent<BoxCollider2D>().size = new Vector2(2,1);
             GetComponent<BoxCollider2D>().offset = new Vector2(0,-2.5f);
@@ -29,14 +29,12 @@ public class PlayerSliding : Singleton<PlayerSliding>
 
     public void FinishSlide(){
         // Debug.Log("Finish Slide");
-        isSliding = false;
+        GetComponent<PlayerState>().SwitchState("Default");
         GetComponent<BoxCollider2D>().size = new Vector2(2.5f,5);
         GetComponent<BoxCollider2D>().offset = new Vector2(0,-0.5f);
     }
 
-    public bool GetIsSliding(){
-        return isSliding;
-    }
+    
 
     
     
