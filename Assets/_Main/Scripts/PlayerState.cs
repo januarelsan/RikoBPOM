@@ -11,7 +11,8 @@ public class PlayerState : MonoBehaviour
         Slide,
         Push,
         Dash,
-        Hurt        
+        Hurt,
+        Toss 
     }
 
     private State state;

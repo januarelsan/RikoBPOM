@@ -11,6 +11,7 @@ TagManager:
   - Mafia
   - PushTrigger
   - Profesor
+  - Smoker
   layers:
   - Default
   - TransparentFX

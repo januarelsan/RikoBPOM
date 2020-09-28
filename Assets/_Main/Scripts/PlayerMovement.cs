@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
                 speed = 50;
         } else if (GetComponent<PlayerState>().GetState().ToString() == "Push"){
                 speed = 25;
+        } else if (GetComponent<PlayerState>().GetState().ToString() == "Toss"){
+                speed = 0;
         } else
         {
             speed = defSpeed;   

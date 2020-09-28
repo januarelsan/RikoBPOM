@@ -49,7 +49,7 @@ public class PlayerCollectingItem : MonoBehaviour
                     break;
                 case 5:
                     Debug.Log("Get Superheal");
-                    // GetComponent<PlayerDash>().Dash("Sepeda");    
+                    GetComponent<PlayerSuperHealing>().SuperHealing();
                     AudioOneShooter.Instance.ShootClip(0);            
                     break;
                 default:

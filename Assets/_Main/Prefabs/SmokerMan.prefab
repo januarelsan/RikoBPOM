@@ -125,9 +125,10 @@ GameObject:
   - component: {fileID: 5623771455681344548}
   - component: {fileID: 5623771455681344551}
   - component: {fileID: 5623771455681344544}
+  - component: {fileID: 2035044593}
   m_Layer: 0
   m_Name: SmokerMan
-  m_TagString: Untagged
+  m_TagString: Smoker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,7 +184,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.056360662, y: -0.24155807}
+  m_Offset: {x: -0.92640495, y: -0.24155807}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -194,7 +195,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9214107, y: 6.2945614}
+  m_Size: {x: 3.886942, y: 6.2945614}
   m_EdgeRadius: 0
 --- !u!114 &5623771455681344548
 MonoBehaviour:
@@ -243,6 +244,18 @@ MonoBehaviour:
   smokeItem: {fileID: 2752167742614006081, guid: 20c178c396cb83449bbbdfa220dce5fd,
     type: 3}
   ciggaratePos: {fileID: 5623771454796004447}
+--- !u!114 &2035044593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5623771455681344550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b76a28e9e16e3c34ab82fd4d457d9b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5623771456536254781
 GameObject:
   m_ObjectHideFlags: 0
