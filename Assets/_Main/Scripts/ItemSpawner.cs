@@ -26,6 +26,6 @@ public class ItemSpawner : MonoBehaviour
         Vector3 spawnPos = new Vector3 (playerPos.position.x + playerOffset, items[item].transform.position.y, items[item].transform.position.z);
         Instantiate(items[item], spawnPos, items[item].transform.rotation, transform);
         // Start a new timer for the next random spawn
-        Invoke("SpawnItem", Random.Range (5, 15));
+        Invoke("SpawnItem", Random.Range (5, 10));
     }
 }

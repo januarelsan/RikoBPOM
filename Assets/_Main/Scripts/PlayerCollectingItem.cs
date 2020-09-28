@@ -17,7 +17,7 @@ public class PlayerCollectingItem : MonoBehaviour
     }
 
     void ApplyEffect(int itemType){
-        if(!GetComponent<PlayerDash>().GetIsDashing()){
+        if(GetComponent<PlayerState>().GetState().ToString() != "Dash"){
             switch (itemType)
             {
                 case 0:
@@ -39,7 +39,17 @@ public class PlayerCollectingItem : MonoBehaviour
                     break;
                 case 3:
                     Debug.Log("Get Skateboard");
-                    GetComponent<PlayerDash>().Dash();    
+                    GetComponent<PlayerDash>().Dash("Skateboard");    
+                    AudioOneShooter.Instance.ShootClip(0);            
+                    break;
+                case 4:
+                    Debug.Log("Get Sepeda");
+                    GetComponent<PlayerDash>().Dash("Sepeda");    
+                    AudioOneShooter.Instance.ShootClip(0);            
+                    break;
+                case 5:
+                    Debug.Log("Get Superheal");
+                    GetComponent<PlayerSuperHealing>().SuperHealing();
                     AudioOneShooter.Instance.ShootClip(0);            
                     break;
                 default:

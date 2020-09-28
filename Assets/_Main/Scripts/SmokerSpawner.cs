@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SmokerSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject smoker;
+    [SerializeField] private GameObject[] smokers;
     [SerializeField] private Transform playerPos;
 
     private float playerOffset = 30;
@@ -22,8 +22,9 @@ public class SmokerSpawner : MonoBehaviour
 
     void SpawnEnemy(){
         //   CancelInvoke() // Stop the timer (I don't think you need it, try without)
-        Vector3 spawnPos = new Vector3 (playerPos.position.x + playerOffset, smoker.transform.position.y, smoker.transform.position.z);
-        Instantiate(smoker, spawnPos, smoker.transform.rotation, transform);
+        int smokerIndex = Random.Range(0,smokers.Length);
+        Vector3 spawnPos = new Vector3 (playerPos.position.x + playerOffset, smokers[smokerIndex].transform.position.y, smokers[smokerIndex].transform.position.z);
+        Instantiate(smokers[smokerIndex], spawnPos, smokers[smokerIndex].transform.rotation, transform);
         // Start a new timer for the next random spawn
         Invoke("SpawnEnemy", Random.Range (5, 10));
     }
