@@ -24,6 +24,8 @@ public class GameData : Singleton<GameData> {
 		set { PlayerPrefs.SetInt("AudioOn",value);}
 	}
 
+	
+
 		
 	
 }
