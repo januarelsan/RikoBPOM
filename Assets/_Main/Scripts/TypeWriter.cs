@@ -13,17 +13,17 @@ public class TypeWriter : MonoBehaviour {
     Coroutine writingCoroutine;
 
     private bool isWriting;
-    private bool isWritingFinish;
- 
-	// Use this for initialization
-	void Start () {
-		
-		captionText.text = "";
+    
+ 	
+    public void StartWriting(string message){
+        this.message = message;
+        captionText.text = "";
 		writingCoroutine = StartCoroutine(TypeText());
-	}
+    }
  
 	IEnumerator TypeText () {
         isWriting = true;
+        
 		foreach (char letter in message.ToCharArray()) {
 			captionText.text += letter;
 			if (sound)
@@ -37,21 +37,20 @@ public class TypeWriter : MonoBehaviour {
               
 	}
 
+    public bool GetIsWriting(){
+        return isWriting;
+    }
+
     public void FinishWriting(){
 
-        if(isWriting && !isWritingFinish){
+        if(isWriting){
             StopCoroutine(writingCoroutine);
-            isWriting = false;
-            isWritingFinish = true;
+            isWriting = false;            
             captionText.text = message;
             
-        } else {
-            ToGameScene();
-        }
+        } 
 
     }
 
-    public void ToGameScene(){
-        SceneController.Instance.GoToScene("Game");
-    }
+    
 }
