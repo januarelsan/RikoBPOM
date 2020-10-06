@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameData : Singleton<GameData> {
 
 	[SerializeField]
-	private bool resetData;
+	private bool resetData = new bool();
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +22,24 @@ public class GameData : Singleton<GameData> {
 	{
 		get { return PlayerPrefs.GetInt("AudioOn",1);}
 		set { PlayerPrefs.SetInt("AudioOn",value);}
+	}
+
+	public int PlayerCoin
+	{
+		get { return PlayerPrefs.GetInt("PlayerCoin",1);}
+		set { PlayerPrefs.SetInt("PlayerCoin",value);}
+	}
+
+	public int SelectedEpisode
+	{
+		get { return PlayerPrefs.GetInt("SelectedEpisode",1);}
+		set { PlayerPrefs.SetInt("SelectedEpisode",value);}
+	}
+
+	public int SelectedLevel
+	{
+		get { return PlayerPrefs.GetInt("SelectedLevel",1);}
+		set { PlayerPrefs.SetInt("SelectedLevel",value);}
 	}
 
 	

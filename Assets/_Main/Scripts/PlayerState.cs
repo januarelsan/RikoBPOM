@@ -12,7 +12,9 @@ public class PlayerState : MonoBehaviour
         Push,
         Dash,
         Hurt,
-        Toss 
+        Toss,
+        Attack,
+        Die
     }
 
     private State state;
@@ -30,6 +32,8 @@ public class PlayerState : MonoBehaviour
     public void SwitchState(int index){
         state = (State) index;
     }
+
+    
 
     public void SwitchState(string name){
         if(name != "Default")

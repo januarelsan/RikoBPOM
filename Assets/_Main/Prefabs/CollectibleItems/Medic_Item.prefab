@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 6687323068178241057}
   - component: {fileID: 6687323068178241503}
   - component: {fileID: 2959638087700805943}
-  - component: {fileID: 2959638087700805944}
+  - component: {fileID: -8690206288107765812}
   m_Layer: 0
   m_Name: Medic_Item
-  m_TagString: CollectibleItem
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -537,7 +537,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &2959638087700805944
+--- !u!114 &-8690206288107765812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -546,10 +546,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6687323068178241058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db80f561345929d48bb385949d7728e5, type: 3}
+  m_Script: {fileID: 11500000, guid: e9b012189fd29d04babe5a57808ea3a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 2
 --- !u!1001 &1417964905
 PrefabInstance:
   m_ObjectHideFlags: 0

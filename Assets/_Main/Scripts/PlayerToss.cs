@@ -6,6 +6,8 @@ public class PlayerToss : MonoBehaviour
 {
     private bool isNearSmoker;
     private GameObject nearestSmoker;
+
+    [SerializeField]private FriendData friendData;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,8 @@ public class PlayerToss : MonoBehaviour
             
             GetComponent<PlayerState>().SwitchState("Toss");
             GetComponent<Animator>().SetTrigger("Toss");   
+
+            friendData.value++;
 
             if(nearestSmoker != null)                 {
                 nearestSmoker.GetComponent<FriendToss>().Toss();

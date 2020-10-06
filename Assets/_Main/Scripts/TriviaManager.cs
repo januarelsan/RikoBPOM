@@ -5,9 +5,14 @@ using UnityEngine.UI;
 
 public class TriviaManager : MonoBehaviour
 {
+    #pragma warning disable 0649
     private int questIndex;
+    private int[] randomIndex;
+    private int score;
 
-    
+    [SerializeField] private QuestionData[] questionDatas;
+    [SerializeField] private CoinData coinData;
+
     // UI
 
     [SerializeField] private GameObject finishPanel;
@@ -24,29 +29,52 @@ public class TriviaManager : MonoBehaviour
 
     [SerializeField] private AudioClip[] answerResultClips;
 
+    [SerializeField] private Text poinText;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        randomIndex = new int[questionDatas.Length];
+        for (int i = 0; i < questionDatas.Length; i++)
+		{			
+			randomIndex[i] = i;
+		}
+
+        RandomIntArrayElement(randomIndex,20);
+
         SetQuest();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+	void RandomIntArrayElement(int[] array, int randomAmount){
+                
+		for (int i = 0; i < randomAmount; i++)
+		{			
+			int elementX = UnityEngine.Random.Range(0, array.Length);
+			int elementY = UnityEngine.Random.Range(0, array.Length);
+			var temp = array[elementX];
+			array[elementX] = array[elementY];
+			array[elementY] = temp;
+		}
+	}
 
     void SetQuest(){
         //Set Quest Index Text
         indexText.text = "Soal " + (questIndex+1) + "/5";
 
         //Set Quest Text
-        questText.text = TriviaData.Instance.GetQuestString(questIndex);
-
+        questText.text = questionDatas[randomIndex[questIndex]].quest;
 
         for (int i = 0; i < 4; i++)        
         {
-            choiceObjects[i].transform.GetChild(0).GetComponent<Text>().text = TriviaData.Instance.GetChoiceString(questIndex, i);
+            choiceObjects[i].SetActive(false);
+        }
+
+
+        for (int i = 0; i < questionDatas[randomIndex[questIndex]].options.Length; i++)        
+        {
+            choiceObjects[i].transform.GetChild(0).GetComponent<Text>().text = questionDatas[randomIndex[questIndex]].options[i];
             choiceObjects[i].SetActive(false);
             choiceObjects[i].SetActive(true);
             questText.gameObject.SetActive(false);
@@ -55,7 +83,7 @@ public class TriviaManager : MonoBehaviour
     }
 
     public void Answering(int choiceIndex){
-        if(choiceIndex == TriviaData.Instance.GetTrueAnswer(questIndex)){
+        if(choiceIndex == questionDatas[randomIndex[questIndex]].answerIndex){
             AnswerIsTrue(choiceIndex);
         } else {
             AnswerIsFalse(choiceIndex);
@@ -65,6 +93,11 @@ public class TriviaManager : MonoBehaviour
         {
             choiceObjects[i].GetComponent<Button>().interactable = false;
         }    
+    }
+
+    public void TakeAward(){
+        coinData.value += score;
+        SceneController.Instance.GoToScene("SelectLevel");
     }
 
     public void NextQuestion(){
@@ -87,6 +120,7 @@ public class TriviaManager : MonoBehaviour
     void FinishGame(){
         Debug.Log("Finish Game");    
         finishPanel.SetActive(true);
+        poinText.text = score + " Poin";
     }
 
     void AnswerIsTrue(int choiceIndex){
@@ -95,6 +129,7 @@ public class TriviaManager : MonoBehaviour
         answerResultObject.SetActive(true);
         GetComponent<AudioSource>().PlayOneShot(answerResultClips[1]);
         choiceObjects[choiceIndex].GetComponent<Image>().sprite = choiceResultSprites[1];
+        score+=10;
         
     }
 

@@ -124,8 +124,8 @@ GameObject:
   - component: {fileID: 5623771455681344549}
   - component: {fileID: 5623771455681344548}
   - component: {fileID: 5623771455681344551}
-  - component: {fileID: 5623771455681344544}
   - component: {fileID: 2035044593}
+  - component: {fileID: 903250698}
   m_Layer: 0
   m_Name: SmokerMan
   m_TagString: Smoker
@@ -229,21 +229,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5623771455681344544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5623771455681344550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94fc45b82ead7a34ab63fe268f8975ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smokeItem: {fileID: 2752167742614006081, guid: 20c178c396cb83449bbbdfa220dce5fd,
-    type: 3}
-  ciggaratePos: {fileID: 5623771454796004447}
 --- !u!114 &2035044593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +241,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b76a28e9e16e3c34ab82fd4d457d9b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &903250698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5623771455681344550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8910698337a40408b177c5e3ee9ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokeItem: {fileID: 2752167742614006081, guid: 20c178c396cb83449bbbdfa220dce5fd,
+    type: 3}
+  ciggaratePos: {fileID: 5623771454796004447}
 --- !u!1 &5623771456536254781
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5623771456536254778}
   - component: {fileID: 5623771456536254779}
+  - component: {fileID: 247790056}
   m_Layer: 0
   m_Name: SmokerTrigger
   m_TagString: SmokerTrigger
@@ -281,7 +282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5623771456536254781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.49, y: 0, z: 0}
+  m_LocalPosition: {x: -40, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5623771455681344547}
@@ -313,3 +314,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 15.297394}
   m_EdgeRadius: 0
+--- !u!114 &247790056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5623771456536254781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94fc45b82ead7a34ab63fe268f8975ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemSpawner : MonoBehaviour
+public class ItemSpawner : Singleton<ItemSpawner>
 {
     [SerializeField] private GameObject[] items;
     [SerializeField] private Transform playerPos;
@@ -18,6 +18,10 @@ public class ItemSpawner : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void StopSpawn(){
+        CancelInvoke();
     }
 
     void SpawnItem(){

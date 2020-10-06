@@ -37,7 +37,7 @@ public class StoryManager : MonoBehaviour
     }
 
     void ToGameScene(){
-        SceneController.Instance.GoToScene("Game");
+        SceneController.Instance.GoToScene("Mission");
     }
 
     // Update is called once per frame

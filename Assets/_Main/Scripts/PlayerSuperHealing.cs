@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSuperHealing : MonoBehaviour
+public class PlayerSuperHealing : Singleton<PlayerSuperHealing>
 {
     public GameObject glow;
     // Start is called before the first frame update

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDash : MonoBehaviour
+public class PlayerDash : Singleton<PlayerDash>
 {
     
     [SerializeField] private GameObject smokeExplosion;

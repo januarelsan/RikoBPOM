@@ -4,6 +4,7 @@ using UnityEngine.UI;
  
 public class TypeWriter : MonoBehaviour {
  
+    #pragma warning disable 0649 
     [SerializeField] private Text captionText; 
 	[SerializeField] private float letterPause;
 	[SerializeField] private AudioClip sound;

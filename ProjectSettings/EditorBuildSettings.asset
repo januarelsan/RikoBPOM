@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Main/Scenes/Trivia.unity
     guid: 0845a845efbf9ed4983208d51a3f3386
+  - enabled: 1
+    path: Assets/_Main/Scenes/Badge.unity
+    guid: a6c2c1f34b81e2140ab5beefb8512f3a
+  - enabled: 1
+    path: Assets/_Main/Scenes/Poster.unity
+    guid: e092417f4d40c664b9a2fbb48327f8b3
+  - enabled: 1
+    path: Assets/_Main/Scenes/Mission.unity
+    guid: df25345b6a5f5284ebab1182e103553a
   m_configObjects: {}

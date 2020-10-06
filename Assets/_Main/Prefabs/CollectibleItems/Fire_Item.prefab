@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 8632434358218281206}
   - component: {fileID: 8632434358218281224}
   - component: {fileID: 6835952304803531414}
-  - component: {fileID: 6835952304803531415}
+  - component: {fileID: 1309773344}
   m_Layer: 0
   m_Name: Fire_Item
-  m_TagString: CollectibleItem
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: eca5cafbc5ecd6345a7e38c1c4beea7d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -536,7 +536,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &6835952304803531415
+--- !u!114 &1309773344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -545,7 +545,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8632434358218281205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db80f561345929d48bb385949d7728e5, type: 3}
+  m_Script: {fileID: 11500000, guid: e49bb851ef065474990be4585d7331c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1

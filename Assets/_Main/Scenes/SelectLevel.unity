@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 17920259}
   - component: {fileID: 17920258}
   - component: {fileID: 17920261}
+  - component: {fileID: 17920262}
   m_Layer: 5
   m_Name: LevelButton
   m_TagString: Untagged
@@ -202,7 +203,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 17920259}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -214,7 +215,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &17920259
@@ -457,6 +458,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &17920262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17920256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &18945108
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +561,7 @@ GameObject:
   - component: {fileID: 23751980}
   - component: {fileID: 23751979}
   - component: {fileID: 23751982}
+  - component: {fileID: 23751983}
   m_Layer: 5
   m_Name: LevelButton (1)
   m_TagString: Untagged
@@ -612,7 +630,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 23751980}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -624,7 +642,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &23751980
@@ -867,6 +885,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &23751983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23751977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &33296884
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +988,7 @@ GameObject:
   - component: {fileID: 35904845}
   - component: {fileID: 35904844}
   - component: {fileID: 35904847}
+  - component: {fileID: 35904848}
   m_Layer: 5
   m_Name: LevelButton
   m_TagString: Untagged
@@ -1022,7 +1057,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 35904845}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1034,7 +1069,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &35904845
@@ -1277,6 +1312,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &35904848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35904842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &50121137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1757,7 @@ GameObject:
   - component: {fileID: 81301931}
   - component: {fileID: 81301930}
   - component: {fileID: 81301933}
+  - component: {fileID: 81301934}
   m_Layer: 5
   m_Name: LevelButton (1)
   m_TagString: Untagged
@@ -1786,7 +1838,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &81301931
@@ -2029,6 +2081,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &81301934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81301928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &108366637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,80 +2319,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135938005}
   m_CullTransparentMesh: 0
---- !u!1 &147938979
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 147938980}
-  - component: {fileID: 147938982}
-  - component: {fileID: 147938981}
-  m_Layer: 5
-  m_Name: PointImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &147938980
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147938979}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 453930137}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -300, y: -100}
-  m_SizeDelta: {x: 500, y: 128}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &147938981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147938979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 40afadcf6572cf74d86b3cdfd7a04f2c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &147938982
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147938979}
-  m_CullTransparentMesh: 0
 --- !u!1 &168432572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,6 +2480,7 @@ GameObject:
   - component: {fileID: 174653650}
   - component: {fileID: 174653649}
   - component: {fileID: 174653652}
+  - component: {fileID: 174653653}
   m_Layer: 5
   m_Name: LevelButton (3)
   m_TagString: Untagged
@@ -2554,7 +2549,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 174653650}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2566,7 +2561,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &174653650
@@ -2809,6 +2804,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &174653653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174653647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &176610367
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,6 +2833,7 @@ GameObject:
   - component: {fileID: 176610370}
   - component: {fileID: 176610369}
   - component: {fileID: 176610372}
+  - component: {fileID: 176610373}
   m_Layer: 5
   m_Name: LevelButton (2)
   m_TagString: Untagged
@@ -2890,7 +2902,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 176610370}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2902,7 +2914,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &176610370
@@ -3145,6 +3157,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &176610373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176610367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &176622847
 GameObject:
   m_ObjectHideFlags: 0
@@ -3572,7 +3600,7 @@ GameObject:
   - component: {fileID: 195602502}
   - component: {fileID: 195602501}
   m_Layer: 0
-  m_Name: SelectLevelManager
+  m_Name: SelectEpisodeManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3590,12 +3618,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c27e78448be904992bc7d037c5648b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels:
+  episodes:
   - {fileID: 943704889}
   - {fileID: 357642316}
   - {fileID: 907802960}
   - {fileID: 602363100}
   - {fileID: 316481242}
+  levelHistories:
+  - {fileID: 11400000, guid: cc82796fcc4736343a8bd64ffb3a63a0, type: 2}
+  - {fileID: 11400000, guid: 045904013f1c1004c9a338e6ffbbb18b, type: 2}
+  - {fileID: 11400000, guid: de8a7d26234dc1c49b24918e2c81c0f9, type: 2}
+  - {fileID: 11400000, guid: c9c4c293499ef8b4a8c940b29f06be39, type: 2}
+  - {fileID: 11400000, guid: 7ab49bd945475304fa00f9ddea22e8e9, type: 2}
+  - {fileID: 11400000, guid: 606cbff7bd574db49acf002e9ef2aaa3, type: 2}
 --- !u!4 &195602502
 Transform:
   m_ObjectHideFlags: 0
@@ -3697,6 +3732,7 @@ GameObject:
   - component: {fileID: 198344572}
   - component: {fileID: 198344571}
   - component: {fileID: 198344574}
+  - component: {fileID: 198344575}
   m_Layer: 5
   m_Name: LevelButton (2)
   m_TagString: Untagged
@@ -3765,7 +3801,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 198344572}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -3777,7 +3813,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &198344572
@@ -4020,6 +4056,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &198344575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198344569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &210918305
 GameObject:
   m_ObjectHideFlags: 0
@@ -4033,6 +4085,7 @@ GameObject:
   - component: {fileID: 210918308}
   - component: {fileID: 210918307}
   - component: {fileID: 210918310}
+  - component: {fileID: 210918311}
   m_Layer: 5
   m_Name: LevelButton (1)
   m_TagString: Untagged
@@ -4101,7 +4154,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 210918308}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -4113,7 +4166,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &210918308
@@ -4356,6 +4409,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &210918311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210918305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &218521108
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,6 +4438,7 @@ GameObject:
   - component: {fileID: 218521111}
   - component: {fileID: 218521110}
   - component: {fileID: 218521113}
+  - component: {fileID: 218521114}
   m_Layer: 5
   m_Name: LevelButton
   m_TagString: Untagged
@@ -4437,7 +4507,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 218521111}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -4449,7 +4519,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &218521111
@@ -4692,6 +4762,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &218521114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218521108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &229548520
 GameObject:
   m_ObjectHideFlags: 0
@@ -4923,7 +5009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4953,7 +5039,7 @@ GameObject:
   - component: {fileID: 316481243}
   - component: {fileID: 316481245}
   m_Layer: 5
-  m_Name: Level (4)
+  m_Name: Episode (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4998,7 +5084,7 @@ RectTransform:
   - {fileID: 858736138}
   - {fileID: 971937786}
   m_Father: {fileID: 1231978037}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -5031,6 +5117,7 @@ GameObject:
   - component: {fileID: 318052843}
   - component: {fileID: 318052842}
   - component: {fileID: 318052845}
+  - component: {fileID: 318052846}
   m_Layer: 5
   m_Name: LevelButton (2)
   m_TagString: Untagged
@@ -5099,7 +5186,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 318052843}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -5111,7 +5198,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &318052843
@@ -5354,6 +5441,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &318052846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318052840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &319434266
 GameObject:
   m_ObjectHideFlags: 0
@@ -5410,7 +5513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5589,6 +5692,7 @@ GameObject:
   - component: {fileID: 341909348}
   - component: {fileID: 341909347}
   - component: {fileID: 341909350}
+  - component: {fileID: 341909351}
   m_Layer: 5
   m_Name: LevelButton (3)
   m_TagString: Untagged
@@ -5657,7 +5761,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 341909348}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -5669,7 +5773,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &341909348
@@ -5912,6 +6016,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &341909351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341909345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &343417448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5943,7 +6063,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 453930137}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -6042,7 +6162,7 @@ GameObject:
   - component: {fileID: 357642318}
   - component: {fileID: 357642319}
   m_Layer: 5
-  m_Name: Level (1)
+  m_Name: 'Episode (1) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6062,7 +6182,7 @@ RectTransform:
   - {fileID: 1642251671}
   - {fileID: 50121138}
   m_Father: {fileID: 1231978037}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6237,7 +6357,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6540,7 +6660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6715,9 +6835,9 @@ RectTransform:
   - {fileID: 33296885}
   - {fileID: 236710700}
   - {fileID: 1231978037}
-  - {fileID: 147938980}
   - {fileID: 899110722}
   - {fileID: 343417449}
+  - {fileID: 1760281313}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7608,7 +7728,7 @@ GameObject:
   - component: {fileID: 602363102}
   - component: {fileID: 602363103}
   m_Layer: 5
-  m_Name: Level (3)
+  m_Name: Episode (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7628,7 +7748,7 @@ RectTransform:
   - {fileID: 180351161}
   - {fileID: 1964955818}
   m_Father: {fileID: 1231978037}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -7941,7 +8061,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8370,7 +8490,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8722,7 +8842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9018,7 +9138,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9314,7 +9434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10081,7 +10201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10186,6 +10306,7 @@ GameObject:
   - component: {fileID: 898932198}
   - component: {fileID: 898932197}
   - component: {fileID: 898932200}
+  - component: {fileID: 898932201}
   m_Layer: 5
   m_Name: LevelButton (3)
   m_TagString: Untagged
@@ -10254,7 +10375,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 898932198}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -10266,7 +10387,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &898932198
@@ -10509,6 +10630,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &898932201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898932195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &899110721
 GameObject:
   m_ObjectHideFlags: 0
@@ -10540,7 +10677,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 453930137}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10733,7 +10870,7 @@ GameObject:
   - component: {fileID: 907802962}
   - component: {fileID: 907802963}
   m_Layer: 5
-  m_Name: Level (2)
+  m_Name: Episode (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10753,7 +10890,7 @@ RectTransform:
   - {fileID: 1513298613}
   - {fileID: 1685947365}
   m_Father: {fileID: 1231978037}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -10884,7 +11021,7 @@ GameObject:
   - component: {fileID: 943704891}
   - component: {fileID: 943704892}
   m_Layer: 5
-  m_Name: Level
+  m_Name: Episode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10904,7 +11041,7 @@ RectTransform:
   - {fileID: 683892268}
   - {fileID: 1213494707}
   m_Father: {fileID: 1231978037}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10962,6 +11099,7 @@ GameObject:
   - component: {fileID: 949462208}
   - component: {fileID: 949462207}
   - component: {fileID: 949462210}
+  - component: {fileID: 949462211}
   m_Layer: 5
   m_Name: LevelButton (1)
   m_TagString: Untagged
@@ -11030,7 +11168,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 949462208}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -11042,7 +11180,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &949462208
@@ -11285,6 +11423,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &949462211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949462205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &971937785
 GameObject:
   m_ObjectHideFlags: 0
@@ -11471,7 +11625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11545,7 +11699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11767,7 +11921,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11798,6 +11952,7 @@ GameObject:
   - component: {fileID: 1120815388}
   - component: {fileID: 1120815387}
   - component: {fileID: 1120815390}
+  - component: {fileID: 1120815391}
   m_Layer: 5
   m_Name: LevelButton
   m_TagString: Untagged
@@ -11866,7 +12021,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1120815388}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -11878,7 +12033,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1120815388
@@ -12121,6 +12276,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1120815391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120815385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1166926846
 GameObject:
   m_ObjectHideFlags: 0
@@ -12484,6 +12655,7 @@ GameObject:
   - component: {fileID: 1201085149}
   - component: {fileID: 1201085148}
   - component: {fileID: 1201085151}
+  - component: {fileID: 1201085152}
   m_Layer: 5
   m_Name: LevelButton (1)
   m_TagString: Untagged
@@ -12552,7 +12724,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1201085149}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -12564,7 +12736,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1201085149
@@ -12807,6 +12979,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1201085152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201085146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1213494706
 GameObject:
   m_ObjectHideFlags: 0
@@ -12901,7 +13089,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2145307628}
   - {fileID: 943704890}
   - {fileID: 357642317}
   - {fileID: 907802961}
@@ -13377,6 +13564,7 @@ GameObject:
   - component: {fileID: 1342689342}
   - component: {fileID: 1342689341}
   - component: {fileID: 1342689344}
+  - component: {fileID: 1342689345}
   m_Layer: 5
   m_Name: LevelButton
   m_TagString: Untagged
@@ -13444,7 +13632,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1342689342}
   m_OnClick:
     m_PersistentCalls:
@@ -13457,7 +13645,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1342689342
@@ -13700,6 +13888,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1342689345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342689339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1345771126
 GameObject:
   m_ObjectHideFlags: 0
@@ -13787,6 +13991,7 @@ GameObject:
   - component: {fileID: 1380688463}
   - component: {fileID: 1380688462}
   - component: {fileID: 1380688465}
+  - component: {fileID: 1380688466}
   m_Layer: 5
   m_Name: LevelButton (3)
   m_TagString: Untagged
@@ -13855,7 +14060,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1380688463}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -13867,7 +14072,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1380688463
@@ -14110,6 +14315,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1380688466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380688460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1381779639
 GameObject:
   m_ObjectHideFlags: 0
@@ -14386,7 +14607,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14598,7 +14819,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15236,7 +15457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15310,7 +15531,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15341,6 +15562,7 @@ GameObject:
   - component: {fileID: 1529508395}
   - component: {fileID: 1529508394}
   - component: {fileID: 1529508397}
+  - component: {fileID: 1529508398}
   m_Layer: 5
   m_Name: LevelButton (3)
   m_TagString: Untagged
@@ -15409,7 +15631,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1529508395}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -15421,7 +15643,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1529508395
@@ -15664,6 +15886,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1529508398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529508392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1539944252
 GameObject:
   m_ObjectHideFlags: 0
@@ -16090,7 +16328,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16555,6 +16793,7 @@ GameObject:
   - component: {fileID: 1629789027}
   - component: {fileID: 1629789026}
   - component: {fileID: 1629789029}
+  - component: {fileID: 1629789030}
   m_Layer: 5
   m_Name: LevelButton (4)
   m_TagString: Untagged
@@ -16623,7 +16862,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1629789027}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -16635,7 +16874,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1629789027
@@ -16878,6 +17117,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1629789030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629789024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1642251670
 GameObject:
   m_ObjectHideFlags: 0
@@ -17455,6 +17710,7 @@ GameObject:
   - component: {fileID: 1677103355}
   - component: {fileID: 1677103354}
   - component: {fileID: 1677103357}
+  - component: {fileID: 1677103358}
   m_Layer: 5
   m_Name: LevelButton (2)
   m_TagString: Untagged
@@ -17523,7 +17779,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1677103355}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -17535,7 +17791,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1677103355
@@ -17778,6 +18034,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1677103358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677103352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1685947364
 GameObject:
   m_ObjectHideFlags: 0
@@ -17962,7 +18234,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687031408}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -18408,7 +18680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18426,6 +18698,163 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751195068}
   m_CullTransparentMesh: 0
+--- !u!1001 &1760281312
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 453930137}
+    m_Modifications:
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -292
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -108
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 416.1399
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 93.945435
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 358968160748891187, guid: 506828e44b1f17047863704f73c62b93,
+        type: 3}
+      propertyPath: m_Name
+      value: CoinTab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 506828e44b1f17047863704f73c62b93, type: 3}
+--- !u!224 &1760281313 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 358968160748891184, guid: 506828e44b1f17047863704f73c62b93,
+    type: 3}
+  m_PrefabInstance: {fileID: 1760281312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1760281314 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 358968160777188462, guid: 506828e44b1f17047863704f73c62b93,
+    type: 3}
+  m_PrefabInstance: {fileID: 1760281312}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1760281315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 358968160748891187, guid: 506828e44b1f17047863704f73c62b93,
+    type: 3}
+  m_PrefabInstance: {fileID: 1760281312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1760281316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760281315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5381f8954c9a6d40b4f4b62bc2fdd2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 1760281314}
+  coinData: {fileID: 11400000, guid: bc9c46d91783fee48a83d1511cc743f3, type: 2}
 --- !u!1 &1765242389
 GameObject:
   m_ObjectHideFlags: 0
@@ -18470,7 +18899,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765242389}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -18482,7 +18911,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18513,6 +18942,7 @@ GameObject:
   - component: {fileID: 1772451996}
   - component: {fileID: 1772451995}
   - component: {fileID: 1772451998}
+  - component: {fileID: 1772451999}
   m_Layer: 5
   m_Name: LevelButton (2)
   m_TagString: Untagged
@@ -18581,7 +19011,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1772451996}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -18593,7 +19023,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1772451996
@@ -18836,6 +19266,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1772451999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772451993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1774003509
 GameObject:
   m_ObjectHideFlags: 0
@@ -18849,6 +19295,7 @@ GameObject:
   - component: {fileID: 1774003512}
   - component: {fileID: 1774003511}
   - component: {fileID: 1774003514}
+  - component: {fileID: 1774003515}
   m_Layer: 5
   m_Name: LevelButton (4)
   m_TagString: Untagged
@@ -18917,7 +19364,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1774003512}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -18929,7 +19376,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1774003512
@@ -19172,6 +19619,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1774003515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774003509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1777573376
 GameObject:
   m_ObjectHideFlags: 0
@@ -19514,7 +19977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19886,6 +20349,7 @@ GameObject:
   - component: {fileID: 1835736760}
   - component: {fileID: 1835736759}
   - component: {fileID: 1835736762}
+  - component: {fileID: 1835736763}
   m_Layer: 5
   m_Name: LevelButton (4)
   m_TagString: Untagged
@@ -19954,7 +20418,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1835736760}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -19966,7 +20430,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1835736760
@@ -20209,6 +20673,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1835736763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835736757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1840150192
 GameObject:
   m_ObjectHideFlags: 0
@@ -20646,6 +21126,7 @@ GameObject:
   - component: {fileID: 1916267712}
   - component: {fileID: 1916267711}
   - component: {fileID: 1916267714}
+  - component: {fileID: 1916267715}
   m_Layer: 5
   m_Name: LevelButton (4)
   m_TagString: Untagged
@@ -20714,7 +21195,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 1916267712}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -20726,7 +21207,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1916267712
@@ -20969,6 +21450,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &1916267715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916267709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &1916477563
 GameObject:
   m_ObjectHideFlags: 0
@@ -21013,7 +21510,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916477563}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -21173,7 +21670,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21247,7 +21744,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21535,7 +22032,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21757,7 +22254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9227380f031d254990cf6eaeb4f124c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22063,6 +22560,7 @@ GameObject:
   - component: {fileID: 2046099062}
   - component: {fileID: 2046099061}
   - component: {fileID: 2046099064}
+  - component: {fileID: 2046099065}
   m_Layer: 5
   m_Name: LevelButton (4)
   m_TagString: Untagged
@@ -22131,7 +22629,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 81301931}
+  m_TargetGraphic: {fileID: 2046099062}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -22143,7 +22641,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Story
+          m_StringArgument: Poster
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2046099062
@@ -22386,6 +22884,22 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &2046099065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046099059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07032299324d2df48935e1ab0ba53eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerSprites:
+  - {fileID: 21300000, guid: 360c81ef2dddd3d48a48687ffde10083, type: 3}
+  - {fileID: 21300000, guid: 1d72d67047103d04fab09cdd37710767, type: 3}
+  yellowStarSprite: {fileID: 21300000, guid: 9feb9d5ac1eb6d7459edc876259e3af1, type: 3}
 --- !u!1 &2063697663
 GameObject:
   m_ObjectHideFlags: 0
@@ -22830,102 +23344,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131456622}
   m_CullTransparentMesh: 0
---- !u!1 &2145307627
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2145307628}
-  - component: {fileID: 2145307630}
-  - component: {fileID: 2145307629}
-  - component: {fileID: 2145307631}
-  m_Layer: 5
-  m_Name: SceneTitleText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &2145307628
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145307627}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1231978037}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 580.2457, y: 165.33334}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &2145307629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145307627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 65
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: PILIH EPISODE
---- !u!222 &2145307630
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145307627}
-  m_CullTransparentMesh: 0
---- !u!114 &2145307631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145307627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 1
-  m_MinWidth: -1
-  m_MinHeight: -1
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
