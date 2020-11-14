@@ -13,8 +13,12 @@ public class MeetProfesor : MonoBehaviour
     [SerializeField] private Text questText;
     [SerializeField] private GameObject[] choiceObjects;
 
+    [SerializeField] private AudioClip[] clips;
+
     private int questIndex;
     private int[] randomIndex;
+
+    private GameObject professorObject;
     
     // Start is called before the first frame update
     void Start()
@@ -39,11 +43,12 @@ public class MeetProfesor : MonoBehaviour
 
     void SetQuest(){
         
+        
 
         //Set Quest Text
         questText.text = questionDatas[randomIndex[questIndex]].quest;
 
-        for (int i = 0; i < 4; i++)        
+        for (int i = 0; i < choiceObjects.Length; i++)        
         {
             choiceObjects[i].SetActive(false);
         }
@@ -55,12 +60,15 @@ public class MeetProfesor : MonoBehaviour
             choiceObjects[i].SetActive(true);            
             questText.gameObject.SetActive(true);
         }
+
+        questIndex++;
     }
 
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "Profesor")   {
-            GetComponent<PlayerState>().SwitchState("Idle");
-            GetComponent<Animator>().SetTrigger("Idle");
+            GetComponent<PlayerState>().SwitchState("Idle");     
+            professorObject = col.gameObject;
+            SetQuest();
             convePanel.SetActive(true);
         }
         
@@ -71,11 +79,23 @@ public class MeetProfesor : MonoBehaviour
 
         if(choiceIndex == questionDatas[randomIndex[questIndex]].answerIndex){
             coinData.value += 10;
+            MissionManager.Instance.AddCoinPoint(10);
+            SpawnGimmickEffect.Instance.SpawnGimmick(2);
+            GetComponent<AudioSource>().PlayOneShot(clips[1]);
+        } else {
+            GetComponent<AudioSource>().PlayOneShot(clips[0]);
         }
 
+        professorObject.GetComponent<BoxCollider2D>().enabled = false;
+        StartCoroutine(AfterAnswer());
+        
+    }
 
-        GetComponent<PlayerState>().SwitchState("Default");
-        GetComponent<Animator>().SetTrigger("Run");
+    IEnumerator AfterAnswer(){
+
+        
+        yield return new WaitForSeconds(0);
+        GetComponent<PlayerState>().SwitchState("Run");
     }
 
     void RandomIntArrayElement(int[] array, int randomAmount){

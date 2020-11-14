@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: QuestionData 6
   m_EditorClassIdentifier: 
   quest: Gambar dan tulisan peringatan kesehatan yang ada pada bungkus rokok secara
-    keseluruhan terdiri dari 5 (lima) jenis gambar yang berbeda-beda.
+    keseluruhan terdiri dari 5 (lima) jenis gambar yang berbeda-beda. Bener gak hayo?
   options:
-  - Benar
-  - Salah
+  - Bener dong
+  - Nggak deh
   answerIndex: 0

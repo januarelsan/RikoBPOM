@@ -15,7 +15,7 @@ MonoBehaviour:
   episode: 0
   level: 4
   stars: 0
-  enemy: 0
-  friend: 0
-  coin: 0
-  opened: 1
+  enemyMission: 0
+  friendMission: 0
+  coinMission: 0
+  opened: 0

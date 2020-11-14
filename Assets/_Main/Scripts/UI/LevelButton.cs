@@ -7,40 +7,80 @@ public class LevelButton : MonoBehaviour
 {
     [SerializeField] private Sprite[] containerSprites;
     [SerializeField] private Sprite yellowStarSprite;
+    [SerializeField] private Sprite brownStarSprite;
     
     private int episode;
     private int level;
 
-
+    void Awake(){
+        
+    }
     void Start(){
-        GetComponent<Button>().onClick.AddListener(ToLevel);
+        // GetComponent<Button>().onClick.AddListener(ToLevel);
         episode = transform.parent.parent.GetSiblingIndex();
-        level = transform.GetSiblingIndex() + (episode * 5);
+        level = transform.GetSiblingIndex() + (episode * 5);       
 
-        if(SelectEpisodeManager.Instance.GetLevelHistoryDataAt(level) != null){
+        
 
-            if(SelectEpisodeManager.Instance.GetLevelHistoryDataAt(level).opened){
-                GetComponent<Button>().interactable = true;
-                GetComponent<Image>().sprite = containerSprites[1];
+        if(level <= GameData.Instance.LevelOpened){
+            GetComponent<Button>().interactable = true;
+            GetComponent<Image>().sprite = containerSprites[1];
+                        
+            //open padlock
+            transform.GetChild(2).gameObject.SetActive(false);
 
-                //Star
-                for(int i = 0; i < 3; i++){
-                    transform.GetChild(1).GetChild(i).GetComponent<Image>().enabled = true;
-                    if(i < SelectEpisodeManager.Instance.GetLevelHistoryDataAt(level).stars)
-                        transform.GetChild(1).GetChild(i).GetComponent<Image>().sprite = yellowStarSprite;
-                }
-                
+            for (int i = 0; i < 3; i++)
+            {
+                transform.GetChild(1).GetChild(i).GetComponent<Image>().enabled = true;  
+                transform.GetChild(1).GetChild(i).GetComponent<Image>().sprite = yellowStarSprite;
+            }
+        }
 
-                //open padlock
-                transform.GetChild(2).gameObject.SetActive(false);
+        if(level == GameData.Instance.LevelOpened) {
+            
+            Debug.Log(GameData.Instance.LevelOpened);
+            for (int i = 0; i < 3; i++)
+            {
+                transform.GetChild(1).GetChild(i).GetComponent<Image>().enabled = true;  
+                transform.GetChild(1).GetChild(i).GetComponent<Image>().sprite = brownStarSprite;
             }
 
+            //Star                        
+            if(GameData.Instance.LevelOpenedEnemy == 1){
+                transform.GetChild(1).GetChild(0).GetComponent<Image>().enabled = true;                
+                transform.GetChild(1).GetChild(0).GetComponent<Image>().sprite = yellowStarSprite;
+            }
+
+            if(GameData.Instance.LevelOpenedFriend == 1){
+
+                transform.GetChild(1).GetChild(1).GetComponent<Image>().enabled = true;                
+                transform.GetChild(1).GetChild(1).GetComponent<Image>().sprite = yellowStarSprite;
+            }
+
+            if(GameData.Instance.LevelOpenedFriend == 1){
+                transform.GetChild(1).GetChild(2).GetComponent<Image>().enabled = true;                
+                transform.GetChild(1).GetChild(2).GetComponent<Image>().sprite = yellowStarSprite;
+            }
         }
+
+        
         
     }
 
-    void ToLevel(){
+    public void ToLevel(){
         GameData.Instance.SelectedEpisode = episode;
         GameData.Instance.SelectedLevel = level;
+
+        if(level - episode * 5 == 0){
+            GameData.Instance.StoryType = 1;
+        } else {
+            GameData.Instance.StoryType = 0;
+        }
+
+        if(GameData.Instance.ShowTutorial == 0){
+            SceneController.Instance.GoToScene("Tutorial");    
+        }else{
+            SceneController.Instance.GoToScene("Poster");
+        }
     }
 }

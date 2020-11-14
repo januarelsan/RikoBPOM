@@ -6,11 +6,17 @@ using UnityEngine.UI;
 public class CoinViewPresenter : MonoBehaviour
 {
     [SerializeField] private Text coinText;
+    [SerializeField] private MissionData currentData;
     [SerializeField] private CoinData coinData;
 
     // Update is called once per frame
     void Update()
     {
-        coinText.text = coinData.value.ToString();
+        if(!coinData)
+            coinText.text = currentData.coinM.ToString();
+        else
+        {
+            coinText.text = coinData.value.ToString();
+        }
     }
 }

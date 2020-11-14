@@ -6,8 +6,8 @@ public class Fire : MonoBehaviour, ICollectible
 {
     public void Collect(){      
         Debug.Log("Get Hit by Fire");
-        PlayerHealth.Instance.SubHealth(20);
-        PlayerHealth.Instance.Hurting();
+        PlayerHealth.Instance.SubHealth(10);
+        
         Destroy(this.gameObject);
     }
 }

@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Smoke : MonoBehaviour, ICollectible
 {
-    public void Collect(){      
-        Debug.Log("Get Hit by Smoke");
+    public void Collect(){              
         PlayerHealth.Instance.SubHealth(20);
-        PlayerHealth.Instance.Hurting();
+        
         Destroy(this.gameObject);
     }
 }

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7052ee45e64cd4f428a1f7fa4fe4d665, type: 3}
+  m_Name: MissionData 14
+  m_EditorClassIdentifier: 
+  happyStoryData: {fileID: 11400000, guid: 2a0323d89a1a87845af3721f3cf4728d, type: 2}
+  sadStoryData: {fileID: 11400000, guid: 958b3a624456aa64880a9c76ed365624, type: 2}
+  episode: 2
+  level: 14
+  description: Pelajar Berprestasi
+  enemyM: 26
+  friendM: 20
+  coinM: 1400
+  backgrounds:
+  - {fileID: 21300000, guid: c5cf7934818360940a861f2f918ba210, type: 3}
+  - {fileID: 21300000, guid: 2339ec70178c9fd4aa7c402e57ced183, type: 3}
+  - {fileID: 21300000, guid: 0de1cbb24ec7ca6499a5a6fd3170eb77, type: 3}
+  walls:
+  - {fileID: 21300000, guid: b072d6cd68e15974f9262dfd7490eecb, type: 3}
+  - {fileID: 21300000, guid: fdb678c81952ec944ac71bb9a7cadd35, type: 3}
+  - {fileID: 21300000, guid: b072d6cd68e15974f9262dfd7490eecb, type: 3}
+  smokers: 2
+  mafia: 2
+  spg: 4
+  obstacles: 1
+  dashItems: 1
+  buildings: 2
+  items: 2
+  professors: 1

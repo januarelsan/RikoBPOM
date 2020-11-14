@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData 1
   m_EditorClassIdentifier: 
-  quest: "Apakah pernyataan dibawah ini benar? \u201CIklan rokok boleh beriklan di
-    negara kita\u201D"
+  quest: Menurut kamu, Iklan rokok boleh beriklan di negara kita gak?
   options:
-  - Benar
-  - Salah
+  - Boleh
+  - No way!
   answerIndex: 0

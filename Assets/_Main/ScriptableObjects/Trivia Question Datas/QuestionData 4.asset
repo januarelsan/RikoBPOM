@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData 4
   m_EditorClassIdentifier: 
-  quest: Adanya gambar dan tulisan peringatan kesehatan pada bungkus rokok menunjukkan
-    bahwa rokok merupakan produk yang berbahaya bagi kesehatan.
+  quest: Tau nggak ada gambar dan tulisan peringatan kesehatan pada bungkus rokok,
+    itu nunjukin nggak sih klo rokok itu berbahaya bagi kesehatan?
   options:
-  - Benar
-  - Salah
+  - Banget!
+  - Biasa aja
   answerIndex: 0

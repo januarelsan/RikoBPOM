@@ -6,4 +6,8 @@ using UnityEngine;
 public class CoinData : ScriptableObject
 {
     public int value;
+
+    public void AddCoin(int value){
+        value += value;
+    }
 }

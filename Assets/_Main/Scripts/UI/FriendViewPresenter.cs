@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class FriendViewPresenter : MonoBehaviour
 {
     [SerializeField] private Text friendText;
-    [SerializeField] private FriendData friendData;
+    [SerializeField] private MissionData currentData;
 
     // Update is called once per frame
     void Update()
     {
-        friendText.text = friendData.value.ToString();
+        friendText.text = currentData.friendM.ToString();
     }
 }

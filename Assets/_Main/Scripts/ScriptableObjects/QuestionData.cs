@@ -8,4 +8,8 @@ public class QuestionData : ScriptableObject
     public string quest;
     public string[] options;
     public int answerIndex;
+
+    public int GetAnswerIndex(){
+        return answerIndex;
+    }
 }

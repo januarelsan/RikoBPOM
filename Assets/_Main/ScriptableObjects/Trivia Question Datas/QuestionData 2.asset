@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData 2
   m_EditorClassIdentifier: 
-  quest: "Apakah pernyataan dibawah ini benar? \u201CIklan rokok boleh diletakkan
-    di sekolah\u201D"
+  quest: Menurut kamu, Iklan rokok boleh nggak diletakkan di sekolah?
   options:
-  - Benar
-  - Salah
+  - Gakpapa
+  - Jangan dong
   answerIndex: 1

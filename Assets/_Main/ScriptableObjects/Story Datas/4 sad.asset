@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe6bc6e968d90d44881adb3b9dd2efe, type: 3}
+  m_Name: 4 sad
+  m_EditorClassIdentifier: 
+  level: 4
+  sprites:
+  - {fileID: 21300000, guid: 136a24f04a5f2f34285e34e6c7a9b63d, type: 3}
+  captions:
+  - Terpengaruh merokok membuat hasil tes kesehatan Kakakku memburuk sehingga dia
+    tidak layak untuk lolos ke perusahaan yang diimpikannya.
+  - Ah, andai ia bisa mengulang waktu, tak akan kubiarkan dia mencoba sedikitpun
+    barang yang menyulitkan masa depan karirnya ini.
+  storyType: 1
