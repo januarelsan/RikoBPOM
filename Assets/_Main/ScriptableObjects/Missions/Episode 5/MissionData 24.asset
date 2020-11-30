@@ -18,7 +18,7 @@ MonoBehaviour:
   level: 24
   description: Suami Idaman
   enemyM: 50
-  friendM: 40
+  friendM: 20
   coinM: 3500
   backgrounds:
   - {fileID: 21300000, guid: 0de1cbb24ec7ca6499a5a6fd3170eb77, type: 3}
@@ -28,11 +28,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b072d6cd68e15974f9262dfd7490eecb, type: 3}
   - {fileID: 21300000, guid: fdb678c81952ec944ac71bb9a7cadd35, type: 3}
   - {fileID: 21300000, guid: b072d6cd68e15974f9262dfd7490eecb, type: 3}
-  smokers: 3
-  mafia: 5
+  smokers: 5
+  mafia: 2
   spg: 5
   obstacles: 2
   dashItems: 1
-  buildings: 2
-  items: 2
+  buildings: 1
+  items: 5
   professors: 1

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 49
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Zat/senyawa yang menyebabkan seseorang menjadi candu, sehingga menimbulkan
+    seseorang sulit untuk berhenti merokok adalah... '
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Kadmium
+  - Arsen
+  - Nikotin
+  - 'Hidrogen Peroksida '
+  answerIndex: 2

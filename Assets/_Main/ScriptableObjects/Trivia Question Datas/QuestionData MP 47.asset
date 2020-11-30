@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 47
   m_EditorClassIdentifier: 
-  quest: 
+  quest: Penyakit yang disebabkan akibat merokok antara lain...
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Kanker Paru-paru
+  - Kanker Mulut
+  - Jantung
+  - Semua Benar
+  answerIndex: 3

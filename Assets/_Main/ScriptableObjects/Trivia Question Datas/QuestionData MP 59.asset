@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 59
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Tips aman mencegah perilaku merokok, kecuali:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Tolak tawaran untuk mencoba rokok
+  - Jangan mudah tertipu iklan dan rayuan untuk merokok
+  - Bergaul dengan komunitas perokok
+  - Berpikir jangka panjang untuk kesuksesan di masa depan
+  answerIndex: 2

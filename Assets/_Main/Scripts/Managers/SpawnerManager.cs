@@ -26,6 +26,8 @@ public class SpawnerManager : Singleton<SpawnerManager>
 
     private int spawnIndex;
 
+    private bool isSpawning;
+
 
     // Start is called before the first frame update
     void Start()
@@ -45,10 +47,15 @@ public class SpawnerManager : Singleton<SpawnerManager>
         
         Invoke("Spawning", 5);
     }
+
+    
+    
+    
+
     
 
     void Spawning(){
-        
+        isSpawning = true;
         GameObject objToSpawn = null;
         switch (spawnedList[spawnIndex])
         {
@@ -91,7 +98,8 @@ public class SpawnerManager : Singleton<SpawnerManager>
             spawnIndex = 0;
         }
         // Start a new timer for the next random spawn
-        Invoke("Spawning", Random.Range (3, 7));
+        Invoke("Spawning", Random.Range (5, 7));
+        // Invoke("Spawning", Random.Range (1, 2));
     }
 
     void SetupSpawnList(){
@@ -168,5 +176,10 @@ public class SpawnerManager : Singleton<SpawnerManager>
 
     public void StopSpawn(){
         CancelInvoke();
+        isSpawning = false;
+    }
+
+    public void StartSpawn(float startDelay = 3){
+        Invoke("Spawning", startDelay);
     }
 }

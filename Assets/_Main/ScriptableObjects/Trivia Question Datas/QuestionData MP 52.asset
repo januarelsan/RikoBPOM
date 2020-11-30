@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 52
   m_EditorClassIdentifier: 
-  quest: 
+  quest: Salah satu gas yang beracun yang menurunkan kadar oksigen dalam darah, sehingga
+    dapat menurunkan konsentrasi dan timbulnya penyakit berbahaya adalah...
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Oksigen
+  - Karbon Dioksida
+  - Karbon Monoksida
+  - Nitrogen
+  answerIndex: 2

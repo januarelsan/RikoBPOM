@@ -16,6 +16,8 @@ public class MissionManager : Singleton<MissionManager>
     private bool coinMissionCompleted;
     private MissionData selectedMission;
 
+    private bool isWin;
+
     void Awake(){
         // Reset Data
         currentMission.enemyM = 0;
@@ -31,38 +33,40 @@ public class MissionManager : Singleton<MissionManager>
     }
 
     void Update(){
-        CheckProgress();        
+        if(!isWin)
+            CheckProgress();        
     }
 
     void CheckProgress(){
         if(currentMission.enemyM >= selectedMission.enemyM){
             enemyMissionCompleted = true;
-            GameData.Instance.LevelOpenedEnemy = 1;
+            GameData.Instance.SetLevelOpenedEnemy(GameData.Instance.SelectedLevel,1);
             currentMission.enemyM = selectedMission.enemyM;
         } else {
-            GameData.Instance.LevelOpenedEnemy = 0;
+            // GameData.Instance.SetLevelOpenedEnemy(GameData.Instance.SelectedLevel,0);
             enemyMissionCompleted = false;
         }
 
         if(currentMission.friendM >= selectedMission.friendM){
             friendMissionCompleted = true;
-            GameData.Instance.LevelOpenedFriend = 1;    
+            GameData.Instance.SetLevelOpenedFriend(GameData.Instance.SelectedLevel,1);
             currentMission.friendM = selectedMission.friendM;
         } else {
-            GameData.Instance.LevelOpenedFriend = 0;    
+            // GameData.Instance.SetLevelOpenedFriend(GameData.Instance.SelectedLevel,0);
             friendMissionCompleted = false;
         }
 
         if(currentMission.coinM >= selectedMission.coinM){
-            GameData.Instance.LevelOpenedCoin = 1;
+            GameData.Instance.SetLevelOpenedCoin(GameData.Instance.SelectedLevel,1);
             coinMissionCompleted = true;
             currentMission.coinM = selectedMission.coinM;
         } else {
-            GameData.Instance.LevelOpenedCoin = 0;
+            // GameData.Instance.SetLevelOpenedCoin(GameData.Instance.SelectedLevel,0);
             coinMissionCompleted = false;
         }
         
         if(enemyMissionCompleted == true && friendMissionCompleted == true && coinMissionCompleted == true){                                
+            isWin = true;
             GameManager.Instance.WinGame();
         }
     }

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 56
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Kandungan nikotin dalam rokok dapat menyebabkan:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Hipertensi, bronkitis, impotensi, katarak
+  - Penyakit jantung koroner, aterosklorosis, penyakit paru ostruktif kronik (PPOK)
+  - Kanker paru, kanker kandung kemih, kanker tenggorokan
+  - Semua benar
+  answerIndex: 3

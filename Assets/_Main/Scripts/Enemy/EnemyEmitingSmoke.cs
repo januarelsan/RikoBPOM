@@ -6,8 +6,14 @@ public class EnemyEmitingSmoke : MonoBehaviour
 {
     [SerializeField] private GameObject smokeItem;
     [SerializeField] private Transform ciggaratePos;
+
+    private GameObject smoke;
     
     public void EmittingSmoke(){
-        Instantiate(smokeItem, ciggaratePos.position, ciggaratePos.rotation);
+        smoke = Instantiate(smokeItem, ciggaratePos.position, ciggaratePos.rotation);
+    }
+
+    public void DestorySmoke(){
+        Destroy(smoke);
     }
 }

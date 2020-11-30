@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 60
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Berikut tips behenti merokok, kecuali:'
   options:
-  - 
-  - 
-  - 
-  - 
+  - Hindari kebiasaan yang membuat dorongan merokok, seperti begadang.
+  - Buat kesibukan yang positif
+  - Kongko-kongko dengan teman yang merokok
+  - Dapatkan dukungan dari orang dekat Anda
   answerIndex: 7

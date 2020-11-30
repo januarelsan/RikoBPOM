@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 39
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Bagi wanita hamil, merokok sangat berbahaya lho karena:'
   options:
-  - 
-  - 
-  - 
-  - 
+  - Bayi yang dilahirkan dapat menderita kelainan/cacat
+  - Dapat menurunkan berat badan ibu hamil
+  - 'Dapat menyebabkan aborsi '
+  - Menyebabkan ibu hamil makin lemah
   answerIndex: 7

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 44
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Merokok wajib banget harus dihindari karena:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Mengandung zat adiktif yang menyebabkan ketergantungan sehingga sulit untuk berhenti
+  - Mengandung zat-zat beracun yang menyebabkan berbagai macam penyakit berbahaya
+  - Menurunkan kemampuan dan konsentrasi belajar
+  - 'Semua jawaban benar '
+  answerIndex: 3

@@ -74,7 +74,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3199911, y: -0.24155807}
+  m_Offset: {x: 1.0941949, y: -0.24155807}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -85,7 +85,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.094494, y: 6.2945614}
+  m_Size: {x: 6.5460863, y: 6.2945614}
   m_EdgeRadius: 0
 --- !u!95 &2169769882099581688
 Animator:
@@ -122,7 +122,8 @@ MonoBehaviour:
   smokePush: {fileID: 1419314074}
   pushedClip: {fileID: 8300000, guid: 56bcb6b27191e9341a24e9715ab3dbdd, type: 3}
   pushedDeadClip: {fileID: 8300000, guid: 00b8e04dc99e90449ad40c8074f3878e, type: 3}
-  live: 3
+  enemySPGTrigger: {fileID: 468656056}
+  live: 2
 --- !u!114 &6180600811989752205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,7 +384,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1038a478d654c946bfd2364988b7630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ciggarateItem: {fileID: 3430396434075612262, guid: 1192c28ec89fca2458b5d2ac314f7747,
+  IsMafia: 1
+  smokeItem: {fileID: 1545629443081771205, guid: 057fb9c4c3ccd294ab58889d2cdbc69a,
+    type: 3}
+  ciggarateItem: {fileID: 2752167742614006081, guid: 20c178c396cb83449bbbdfa220dce5fd,
     type: 3}
   ciggaratePos: {fileID: 8378032531622733240}
 --- !u!1 &5758381185128551871

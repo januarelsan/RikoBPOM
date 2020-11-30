@@ -10,26 +10,34 @@ public class PlayerAttack : MonoBehaviour
     
     
     public void Attack(){        
-        if(nearDamageable != null){
+        if(nearDamageable != null ){            
             nearDamageable.Damage();
             GetComponent<PlayerState>().SwitchState("Attack");                        
-        } 
+        } else
+        {
+            Debug.Log("No near");
+        }
     }
 
     public void AfterAttack(){
-        // GetComponent<PlayerState>().SwitchState("Run");
+        if(nearDamageable != null)
+            nearDamageable = null; 
     }
     
     void OnTriggerEnter2D(Collider2D col){                
-        if(col.GetComponent<IDamageable>() != null){
+        if(col.GetComponent<IDamageable>() != null && GetComponent<PlayerState>().GetState().ToString() != "Dash"){
             nearDamageable = col.GetComponent<IDamageable>();            
             GetComponent<PlayerState>().SwitchState("Idle");
+            SpawnerManager.Instance.StopSpawn();
+            Debug.Log("Enter");
         }                       
     }
 
     void OnTriggerExit2D(Collider2D col){            
-        if(nearDamageable != null){
-            nearDamageable = null;            
-        }                   
+        // if(nearDamageable != null){
+        //     nearDamageable = null;            
+        //     SpawnerManager.Instance.StartSpawn();
+        //     Debug.Log("Exit");
+        // }                   
     }
 }

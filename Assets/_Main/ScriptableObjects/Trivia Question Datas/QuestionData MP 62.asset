@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 62
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Berikut area Kawasan Tanpa Rokok (KTR), kecuali:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Fasilitas Pelayanan Kesehatan
+  - Tempat belajar mengajar (sekolah)
+  - Tempat Ibadah
+  - Jalanan Umum
+  answerIndex: 3

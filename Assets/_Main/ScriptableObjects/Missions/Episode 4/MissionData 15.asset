@@ -18,7 +18,7 @@ MonoBehaviour:
   level: 15
   description: Sang Eksekutif Muda
   enemyM: 26
-  friendM: 20
+  friendM: 15
   coinM: 1400
   backgrounds:
   - {fileID: 21300000, guid: 478a3de502ba2af44817410cd98e3d88, type: 3}
@@ -28,11 +28,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4df893c19a98b7248940cb4754fef930, type: 3}
   - {fileID: 21300000, guid: 8b0b6a5b39b668249a1f9432d0afe4fb, type: 3}
   - {fileID: 21300000, guid: 4df893c19a98b7248940cb4754fef930, type: 3}
-  smokers: 3
-  mafia: 0
-  spg: 0
+  smokers: 5
+  mafia: 1
+  spg: 5
   obstacles: 2
   dashItems: 1
   buildings: 2
-  items: 2
+  items: 5
   professors: 1

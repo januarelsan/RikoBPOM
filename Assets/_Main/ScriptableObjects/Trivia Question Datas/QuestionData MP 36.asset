@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 36
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Faktor risiko anak mulai merokok antara lain, kecuali:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Orang tua perokok
+  - Bermain game edukasi bahaya merokok
+  - Pengaruh teman sebaya
+  - Pengaruh iklan dan promosi rokok
+  answerIndex: 1

@@ -18,29 +18,29 @@ public class GameData : Singleton<GameData> {
 		Debug.Log("Reset GameData Prefs");
 	}
 
-	public int LevelOpened
-	{
-		get { return PlayerPrefs.GetInt("LevelOpened",0);}
-		set { PlayerPrefs.SetInt("LevelOpened",value);}
-	}
+	// public int LevelOpened
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpened",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpened",value);}
+	// }
 
-	public int LevelOpenedEnemy
-	{
-		get { return PlayerPrefs.GetInt("LevelOpenedEnemy",0);}
-		set { PlayerPrefs.SetInt("LevelOpenedEnemy",value);}
-	}
+	// public int LevelOpenedEnemy
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpenedEnemy",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpenedEnemy",value);}
+	// }
 
-	public int LevelOpenedFriend
-	{
-		get { return PlayerPrefs.GetInt("LevelOpenedFriend",0);}
-		set { PlayerPrefs.SetInt("LevelOpenedFriend",value);}
-	}
+	// public int LevelOpenedFriend
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpenedFriend",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpenedFriend",value);}
+	// }
 
-	public int LevelOpenedCoin
-	{
-		get { return PlayerPrefs.GetInt("LevelOpenedCoin",0);}
-		set { PlayerPrefs.SetInt("LevelOpenedCoin",value);}
-	}
+	// public int LevelOpenedCoin
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpenedCoin",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpenedCoin",value);}
+	// }
 
 	public int ResultStoryType
 	{
@@ -74,7 +74,7 @@ public class GameData : Singleton<GameData> {
 
 	public int MaskAmount
 	{
-		get { return PlayerPrefs.GetInt("MaskAmount",5);}
+		get { return PlayerPrefs.GetInt("MaskAmount",0);}
 		set { PlayerPrefs.SetInt("MaskAmount",value);}
 	}
 
@@ -129,6 +129,100 @@ public class GameData : Singleton<GameData> {
 		get { return PlayerPrefs.GetInt("Badge4",0);}
 		set { PlayerPrefs.SetInt("Badge4",value);}
 	}
+
+
+	// public int LevelOpened_0
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpened_0",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpened_0",value);}
+	// }
+
+	// public int LevelOpened_1
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpened_1",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpened_1",value);}
+	// }
+
+	// public int LevelOpened_2
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpened_2",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpened_2",value);}
+	// }
+
+	// public int LevelOpened_3
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpened_3",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpened_3",value);}
+	// }
+
+	// public int LevelOpened_4
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpened_4",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpened_0",value);}
+	// }
+
+	public int GetLevelOpened(int level)
+	{
+		return PlayerPrefs.GetInt("LevelOpened_" + level,0);
+		
+	}
+
+	public void SetLevelOpened(int level, int value)
+	{		
+		PlayerPrefs.SetInt("LevelOpened_" + level, value);		
+	}
+
+	public int GetLevelOpenedEnemy(int level)
+	{
+		return PlayerPrefs.GetInt("LevelOpenedEnemy_" + level,0);		
+	}
+
+	public void SetLevelOpenedEnemy(int level, int value)
+	{		
+		PlayerPrefs.SetInt("LevelOpenedEnemy_" + level, value);		
+	}
+
+	public int GetLevelOpenedFriend(int level)
+	{
+		return PlayerPrefs.GetInt("LevelOpenedFriend_" + level,0);		
+	}
+
+	public void SetLevelOpenedFriend(int level, int value)
+	{		
+		PlayerPrefs.SetInt("LevelOpenedFriend_" + level, value);		
+	}
+
+	public int GetLevelOpenedCoin(int level)
+	{
+		return PlayerPrefs.GetInt("LevelOpenedCoin_" + level,0);		
+	}
+
+	public void SetLevelOpenedCoin(int level, int value)
+	{		
+		PlayerPrefs.SetInt("LevelOpenedCoin_" + level, value);		
+	}
+
+	
+
+	// public int LevelOpenedEnemy
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpenedEnemy",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpenedEnemy",value);}
+	// }
+
+	// public int LevelOpenedFriend
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpenedFriend",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpenedFriend",value);}
+	// }
+
+	// public int LevelOpenedCoin
+	// {
+	// 	get { return PlayerPrefs.GetInt("LevelOpenedCoin",0);}
+	// 	set { PlayerPrefs.SetInt("LevelOpenedCoin",value);}
+	// }
+
+
 
 	
 

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 57
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Jenis-jenis asap rokok, kecuali:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Sidestream smoke (asp dari rokok yang tidak diisap)
+  - Mainstream smoke (asap yang diisap oleh perokok)
+  - 'Exhaled mainstream smoke (asap rokok yang dikeluarkan oleh perokok) '
+  - Filtered smoke (asap yang difilter)
+  answerIndex: 3

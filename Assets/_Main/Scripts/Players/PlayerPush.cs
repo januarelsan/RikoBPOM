@@ -15,14 +15,25 @@ public class PlayerPush : MonoBehaviour
     IEnumerator Pushing()
     {
         
+        // GetComponent<PlayerState>().SwitchState("Push");        
+        // pushTrigger.SetActive(true);
+        // yield return new WaitForSeconds(0.2f);
+        
+        // GetComponent<PlayerState>().SwitchState("Run");
+        // pushTrigger.SetActive(false);
+
         GetComponent<PlayerState>().SwitchState("Push");        
         pushTrigger.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
-        // if(GetComponent<PlayerState>().GetState().ToString() == "Push")
-            GetComponent<PlayerState>().SwitchState("Run");
-
-        pushTrigger.SetActive(false);
+        yield return new WaitForSeconds(0);
+            
         
+    }
+
+    public void FinishPushing(){
+        if(GetComponent<PlayerState>().GetState().ToString() == "Push")
+            GetComponent<PlayerState>().SwitchState("Run");
+        
+        pushTrigger.SetActive(false);
     }
     
     

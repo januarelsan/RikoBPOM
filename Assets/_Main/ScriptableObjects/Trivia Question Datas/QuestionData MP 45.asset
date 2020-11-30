@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 45
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Merokok itu perilaku yang nggak baik, karena:'
   options:
-  - 
-  - 
-  - 
-  - 
+  - Merusak kesehatan karena mengakibatkan berbagai penyakit berat
+  - Membuang-buang uang karena seharusnya uang beli rokok bisa digunakan untuk membeli
+    makanan sehat
+  - 'Mengganggu kesehatan orang-orang di sekitar seperti anak-anak, orang tua, wanita
+    hamil, dan yang lainnya karena paparan asap rokok yang dihisap juga bisa terhirup
+    oleh orang di sekitar '
+  - Semua jawaban benar
   answerIndex: 7

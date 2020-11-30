@@ -24,8 +24,7 @@ public class PlayerToss : MonoBehaviour
     }
 
     public void Toss(){
-        if(GetComponent<PlayerState>().GetState().ToString() == "Run" || GetComponent<PlayerState>().GetState().ToString() == "Slide"){
-            Debug.LogWarning("iam here " + GetComponent<PlayerState>().GetState().ToString());
+        if(GetComponent<PlayerState>().GetState().ToString() == "Run" || GetComponent<PlayerState>().GetState().ToString() == "Slide"){            
             if(isNearSmoker){            
                 if(nearestSmoker != null && !isTossing){                      
                     isTossing = true;       

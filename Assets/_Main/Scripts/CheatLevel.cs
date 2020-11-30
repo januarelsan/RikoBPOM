@@ -12,18 +12,52 @@ public class CheatLevel : MonoBehaviour
     }
 
     public void OpenAllLevel(){
-        GameData.Instance.LevelOpened = 24;
-        GameData.Instance.LevelOpenedEnemy = 1;
-        GameData.Instance.LevelOpenedFriend = 1;
-        GameData.Instance.LevelOpenedCoin = 1;
+        
+
+        for (int i = 0; i < 25; i++)
+        {
+            GameData.Instance.SetLevelOpened(i,1);
+        }
+
+        for (int i = 0; i < 25; i++)
+        {
+            GameData.Instance.SetLevelOpenedEnemy(i,1);
+        }
+
+        for (int i = 0; i < 25; i++)
+        {
+            GameData.Instance.SetLevelOpenedFriend(i,1);
+        }
+
+        for (int i = 0; i < 25; i++)
+        {
+            GameData.Instance.SetLevelOpenedCoin(i,1);
+        }
+
+        
         SceneController.Instance.RestartScene();
     }
 
     public void CloseAllLevel(){
-        GameData.Instance.LevelOpened = 0;
-        GameData.Instance.LevelOpenedEnemy = 0;
-        GameData.Instance.LevelOpenedFriend = 0;
-        GameData.Instance.LevelOpenedCoin = 0;
+        for (int i = 0; i < 25; i++)
+        {
+            GameData.Instance.SetLevelOpened(i,0);
+        }
+
+        for (int i = 0; i < 25; i++)
+        {
+            GameData.Instance.SetLevelOpenedEnemy(i,0);
+        }
+
+        for (int i = 0; i < 25; i++)
+        {
+            GameData.Instance.SetLevelOpenedFriend(i,0);
+        }
+
+        for (int i = 0; i < 25; i++)
+        {
+            GameData.Instance.SetLevelOpenedCoin(i,0);
+        }
 
         SceneController.Instance.RestartScene();
     }

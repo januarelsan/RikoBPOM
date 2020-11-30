@@ -25,10 +25,10 @@ public class PlayerMovement : MonoBehaviour
         } else if (GetComponent<PlayerState>().GetState().ToString() == "Idle"){
                 speed = 0;
         } else if(GetComponent<PlayerState>().GetState().ToString() == "Dash"){
-            if(speed < 50)
+            if(speed < 20)
                 speed += 0.2f;
             else    
-                speed = 50;
+                speed = 20;
         } else if (GetComponent<PlayerState>().GetState().ToString() == "Push"){
                 speed = 15;
         } else if (GetComponent<PlayerState>().GetState().ToString() == "Toss"){

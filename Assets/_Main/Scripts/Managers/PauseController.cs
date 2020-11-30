@@ -29,4 +29,19 @@ public class PauseController : MonoBehaviour
             GameManager.Instance.SetIsPlaying(true);
         }
     }
+
+    public void SetPauseGame (bool value)
+    {
+        gameIsPaused = value;
+        if(gameIsPaused)
+        {
+            Time.timeScale = 0f;
+            GameManager.Instance.SetIsPlaying(false);
+        }
+        else 
+        {
+            Time.timeScale = 1;
+            GameManager.Instance.SetIsPlaying(true);
+        }
+    }
 }
