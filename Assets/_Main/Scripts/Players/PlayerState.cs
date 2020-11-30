@@ -26,7 +26,7 @@ public class PlayerState : MonoBehaviour
     }
 
     void Update(){
-        // Debug.Log("Main State: " + state.ToString());
+        Debug.Log("Main State: " + state.ToString());
     }
 
     public State GetState(){
@@ -34,11 +34,17 @@ public class PlayerState : MonoBehaviour
     }
   
     public void SwitchState(string name){
-        
-        state = (State) State.Parse(typeof(State), name);        
-        GetComponent<Animator>().SetTrigger(name);
 
-        // Debug.Log("Change State to: " + state.ToString());
+        if(name == "Sepeda" || name == "Skateboard"){
+            state = (State) State.Parse(typeof(State), "Dash");            
+        }else{
+
+            state = (State) State.Parse(typeof(State), name);        
+            GetComponent<Animator>().SetTrigger(name);
+        }
+        
+
+        Debug.Log("Change State to: " + state.ToString());
     }
 
     

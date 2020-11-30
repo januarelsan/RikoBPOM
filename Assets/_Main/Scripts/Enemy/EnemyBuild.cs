@@ -14,9 +14,11 @@ public class EnemyBuild : MonoBehaviour, IDamageable
     [SerializeField] private Sprite[] damageSprites;
     [SerializeField] private Sprite[] destroySprites;
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private int live = 2;
+    [SerializeField] private int live;
     
-    
+    void Start(){
+        
+    }
 
     public void Damage(){
         live--;
@@ -57,17 +59,20 @@ public class EnemyBuild : MonoBehaviour, IDamageable
             MissionManager.Instance.AddCoinPoint(150);     
         
         Destroy(this.gameObject);   
-        ps.SwitchState("Run");       
+
+        if(ps.GetState().ToString() != "Dash"){
+            ps.SwitchState("Run");       
+            SpawnerManager.Instance.StartSpawn();
+            PlayerAttack pa = FindObjectOfType<PlayerAttack>();
+            pa.AfterAttack();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col){        
         
 
-        if(col.gameObject.tag == "DashCollider")   {
-            
-            StartCoroutine(DestroyAnim());
-            
-            
+        if(col.gameObject.tag == "DashCollider")   {        
+            StartCoroutine(DestroyAnim());                        
         }
         
     }

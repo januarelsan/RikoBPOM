@@ -33,6 +33,6 @@ MonoBehaviour:
   spg: 3
   obstacles: 1
   dashItems: 0
-  buildings: 1
+  buildings: 0
   items: 1
   professors: 1

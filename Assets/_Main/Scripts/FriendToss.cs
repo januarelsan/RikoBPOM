@@ -21,6 +21,7 @@ public class FriendToss : MonoBehaviour
     public void SuperHealing(){
         glow.SetActive(true);
         Toss();
+        GetComponent<EnemyEmitingSmoke>().DestorySmoke();
     }
 
     public void Toss(){

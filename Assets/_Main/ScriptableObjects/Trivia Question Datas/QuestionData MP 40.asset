@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 40
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Merokok dapat menyebabkan penyakit jantung, hal ini terjadi karena:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - 'Merokok bisa menyebabkan penyempitan pembuluh darah '
+  - Merokok bisa meningkatkan asam lambung
+  - 'Merokok bisa mempercepat detak jantung '
+  - Merokok dapat menyebabkan pusing
+  answerIndex: 0

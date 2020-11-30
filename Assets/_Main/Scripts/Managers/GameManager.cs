@@ -5,20 +5,26 @@ using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
+    [SerializeField] private PauseController pauseController;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject winPanel;
     private bool isPlaying = true;
 
-    [SerializeField] private GameObject smokerSpawner;
-    [SerializeField] private GameObject itemSpawner;
 
     
 
     // Start is called before the first frame update
     void Start()
     {
+        
         // WinGame();   
+        // GameData.Instance.SetLevelOpenedEnemy(GameData.Instance.SelectedLevel,1);
+        // GameData.Instance.SetLevelOpenedFriend(GameData.Instance.SelectedLevel,1);
+        // GameData.Instance.SetLevelOpenedCoin(GameData.Instance.SelectedLevel,1);
+
+        //reset on mask every level
+        GameData.Instance.OnMask = 0;
         
     }
 
@@ -37,12 +43,9 @@ public class GameManager : Singleton<GameManager>
         winPanel.SetActive(true);
         player.GetComponent<PlayerState>().SwitchState("Idle"); 
         player.GetComponent<BoxCollider2D>().isTrigger = false;
-        smokerSpawner.SetActive(false);
-        itemSpawner.SetActive(false);
 
         if(isPlaying){
-
-            GameData.Instance.LevelOpened++;    
+            GameData.Instance.SetLevelOpened(GameData.Instance.SelectedLevel + 1, 1);               
             isPlaying = false;
         }
         
@@ -75,14 +78,15 @@ public class GameManager : Singleton<GameManager>
 
         }
 
-        //reset on mask every level
-        GameData.Instance.OnMask = 0;
+        
 
-        GameData.Instance.LevelOpenedEnemy = 0;
-        GameData.Instance.LevelOpenedFriend = 0;
-        GameData.Instance.LevelOpenedCoin = 0;
+        // GameData.Instance.LevelOpenedEnemy = 0;
+        // GameData.Instance.LevelOpenedFriend = 0;
+        // GameData.Instance.LevelOpenedCoin = 0;
         
         ShowResultStory(1);
+
+        StartCoroutine(PauseGame());
         
         
     }
@@ -97,8 +101,18 @@ public class GameManager : Singleton<GameManager>
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
         ShowResultStory(0);
+
+        StartCoroutine(PauseGame());
                         
     }
+
+    IEnumerator PauseGame(){
+        yield return new WaitForSeconds(2);
+        pauseController.SetPauseGame(true);
+    }
+
+
+
 
     void ShowResultStory(int result){
         StartCoroutine(_ShowResultStory(result));

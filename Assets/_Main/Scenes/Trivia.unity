@@ -5151,6 +5151,34 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 32d28e36cd7f2684c8656074df856e37, type: 2}
   - {fileID: 11400000, guid: bfd087bd8f615364f8ee70c9ab73b3ba, type: 2}
   - {fileID: 11400000, guid: 0eba7fffd80fa22479223188b88f237c, type: 2}
+  - {fileID: 11400000, guid: 4e4e5b1ff68967d47b5e21128fde2b50, type: 2}
+  - {fileID: 11400000, guid: eda2400b57c8fc64a8eac4db8a7b8f37, type: 2}
+  - {fileID: 11400000, guid: 6962d6a6ac78e0b449bf275ab55a24bd, type: 2}
+  - {fileID: 11400000, guid: 878b0c8d654d788429a543370298db8e, type: 2}
+  - {fileID: 11400000, guid: 88eea6078dc1b3a45889eec9ceb83f1b, type: 2}
+  - {fileID: 11400000, guid: 19603c50428342e44a97ce1055c94e07, type: 2}
+  - {fileID: 11400000, guid: 83edca75cd105144181649a1743c926d, type: 2}
+  - {fileID: 11400000, guid: ad7710de6bb29694e9a2b4cfeed9a1e1, type: 2}
+  - {fileID: 11400000, guid: 497c1562193ae244883be30f233ad587, type: 2}
+  - {fileID: 11400000, guid: fa6777c5f72542640a4192d23d4e71f8, type: 2}
+  - {fileID: 11400000, guid: bcaebae7dd185df42a7d1db9c075b7ab, type: 2}
+  - {fileID: 11400000, guid: 98b9e94e1b381f448a08a8c716c75cd6, type: 2}
+  - {fileID: 11400000, guid: d9b90aa5e11afbc4ebc3e5456674b7da, type: 2}
+  - {fileID: 11400000, guid: 270212e085ddff7449b0bb9a228a5853, type: 2}
+  - {fileID: 11400000, guid: 2ff89f5c92769d644a2cd599c4e9e330, type: 2}
+  - {fileID: 11400000, guid: 5e34b743c4176854f8e4b54ba1b46e2f, type: 2}
+  - {fileID: 11400000, guid: e5007e428e65159488b549ca12f8aeb8, type: 2}
+  - {fileID: 11400000, guid: 3502b0e2c37b2b246939da6d7439e3a0, type: 2}
+  - {fileID: 11400000, guid: b06d08f83f942404ea0e6d29224017b7, type: 2}
+  - {fileID: 11400000, guid: 22eb8493f29c03940b98a8e14117e372, type: 2}
+  - {fileID: 11400000, guid: e7ca8c1bddd56844ead6d6dae4954bf2, type: 2}
+  - {fileID: 11400000, guid: 4ee96b65d53037343a0d2314f43ebdbb, type: 2}
+  - {fileID: 11400000, guid: f387458d3bf0b0643986d39a4e893d56, type: 2}
+  - {fileID: 11400000, guid: 9c82b87cecb496e499abfa0ef9746e2d, type: 2}
+  - {fileID: 11400000, guid: a1b969b64473f65469d43bc658daeaee, type: 2}
+  - {fileID: 11400000, guid: f791af95af10332499658fe6551c86ba, type: 2}
+  - {fileID: 11400000, guid: 7724cd151de6fe140acdd805def43c80, type: 2}
+  - {fileID: 11400000, guid: 8c78e508060610f4c993d5f76747b5d2, type: 2}
   coinData: {fileID: 11400000, guid: bc9c46d91783fee48a83d1511cc743f3, type: 2}
   skillData: {fileID: 11400000, guid: 287ec48dd638b9d43b4d58a21b8beb9a, type: 2}
   finishPointPanel: {fileID: 852578654}
@@ -5185,7 +5213,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b79198dad3109d1488c990b379a7c58f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

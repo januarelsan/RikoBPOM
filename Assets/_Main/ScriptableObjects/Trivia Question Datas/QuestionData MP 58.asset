@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 58
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Masalah sosial-ekonomi yang diakibatkan dari perilaku merokok adalah:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - 'Merokok merugikan masyarakat secara ekonomi '
+  - Merokok menyebabkan polusi udara
+  - Merokok mengganggu ketertiban sosial dan menimbulkan kerawanan
+  - 'Semua benar '
+  answerIndex: 3

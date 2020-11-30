@@ -315,9 +315,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6638136ba91904db38cc28f3cbd4b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSPG: 1
   smokePush: {fileID: 748192704356964203}
   pushedClip: {fileID: 8300000, guid: 56bcb6b27191e9341a24e9715ab3dbdd, type: 3}
   pushedDeadClip: {fileID: 8300000, guid: 00b8e04dc99e90449ad40c8074f3878e, type: 3}
+  enemySPGTrigger: {fileID: 6830703229647402661}
+  live: 1
 --- !u!82 &944676852
 AudioSource:
   m_ObjectHideFlags: 0

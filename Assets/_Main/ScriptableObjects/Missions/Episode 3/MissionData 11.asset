@@ -18,7 +18,7 @@ MonoBehaviour:
   level: 11
   description: Pelajar Berprestasi
   enemyM: 20
-  friendM: 15
+  friendM: 12
   coinM: 1000
   backgrounds:
   - {fileID: 21300000, guid: 2339ec70178c9fd4aa7c402e57ced183, type: 3}
@@ -28,11 +28,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8b0b6a5b39b668249a1f9432d0afe4fb, type: 3}
   - {fileID: 21300000, guid: 4df893c19a98b7248940cb4754fef930, type: 3}
   - {fileID: 21300000, guid: 8b0b6a5b39b668249a1f9432d0afe4fb, type: 3}
-  smokers: 2
+  smokers: 4
   mafia: 0
   spg: 4
   obstacles: 1
   dashItems: 1
   buildings: 2
-  items: 2
+  items: 5
   professors: 1

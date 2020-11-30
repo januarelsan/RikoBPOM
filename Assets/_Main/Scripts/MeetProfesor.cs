@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class MeetProfesor : MonoBehaviour
 {
+    [SerializeField] private PauseController pauseController;
+    [SerializeField] private SpawnerManager spawnerManager;
     [SerializeField] private QuestionData[] questionDatas;
     [SerializeField] private CoinData coinData;
 
@@ -23,30 +25,38 @@ public class MeetProfesor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        randomIndex = new int[questionDatas.Length];
-        for (int i = 0; i < questionDatas.Length; i++)
-		{			
-			randomIndex[i] = i;
-		}
+        // randomIndex = new int[questionDatas.Length];
+        // for (int i = 0; i < questionDatas.Length; i++)
+		// {			
+		// 	randomIndex[i] = i;
+		// }
 
-        RandomIntArrayElement(randomIndex,20);
+        // RandomIntArrayElement(randomIndex,20);
 
-        SetQuest();
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(professorObject){
+            if(professorObject.GetComponent<BoxCollider2D>().enabled == false){
+                pauseController.SetPauseGame(false);
+            }
+        }
         
     }
 
     void SetQuest(){
         
+        // spawnerManager.StopInvoke();
+
+        questIndex = Random.Range(0, questionDatas.Length);
         
 
         //Set Quest Text
-        questText.text = questionDatas[randomIndex[questIndex]].quest;
+        questText.text = questionDatas[questIndex].quest;
 
         for (int i = 0; i < choiceObjects.Length; i++)        
         {
@@ -54,18 +64,22 @@ public class MeetProfesor : MonoBehaviour
         }
 
 
-        for (int i = 0; i < questionDatas[randomIndex[questIndex]].options.Length; i++)        
+        for (int i = 0; i < questionDatas[questIndex].options.Length; i++)        
         {
-            choiceObjects[i].transform.GetChild(0).GetComponent<Text>().text = questionDatas[randomIndex[questIndex]].options[i];            
+            choiceObjects[i].transform.GetChild(0).GetComponent<Text>().text = questionDatas[questIndex].options[i];            
             choiceObjects[i].SetActive(true);            
             questText.gameObject.SetActive(true);
         }
 
-        questIndex++;
+        
+
+        StartCoroutine(Pause());
+        
     }
 
+
     void OnTriggerEnter2D(Collider2D col){
-        if(col.gameObject.tag == "Profesor")   {
+        if(col.gameObject.tag == "Profesor" && GetComponent<PlayerState>().GetState().ToString() != "Dash")   {
             GetComponent<PlayerState>().SwitchState("Idle");     
             professorObject = col.gameObject;
             SetQuest();
@@ -76,10 +90,11 @@ public class MeetProfesor : MonoBehaviour
 
     public void Answering(int choiceIndex){
         convePanel.SetActive(false);
+        
 
-        if(choiceIndex == questionDatas[randomIndex[questIndex]].answerIndex){
+        if(choiceIndex == questionDatas[questIndex].answerIndex){
             coinData.value += 10;
-            MissionManager.Instance.AddCoinPoint(10);
+            MissionManager.Instance.AddCoinPoint(50);
             SpawnGimmickEffect.Instance.SpawnGimmick(2);
             GetComponent<AudioSource>().PlayOneShot(clips[1]);
         } else {
@@ -87,15 +102,24 @@ public class MeetProfesor : MonoBehaviour
         }
 
         professorObject.GetComponent<BoxCollider2D>().enabled = false;
+        pauseController.SetPauseGame(false);
+        // spawnerManager.StartInvoke();
         StartCoroutine(AfterAnswer());
         
     }
 
-    IEnumerator AfterAnswer(){
-
-        
+    IEnumerator AfterAnswer(){        
         yield return new WaitForSeconds(0);
         GetComponent<PlayerState>().SwitchState("Run");
+
+        yield return new WaitForSeconds(0.5f);
+        Destroy(professorObject);
+    }
+
+    IEnumerator Pause(){        
+        yield return new WaitForSeconds(0.5f);
+        pauseController.PauseGame();
+        
     }
 
     void RandomIntArrayElement(int[] array, int randomAmount){

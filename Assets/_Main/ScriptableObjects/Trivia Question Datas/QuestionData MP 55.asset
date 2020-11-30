@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 55
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Kandungan senyawa kimia berbahaya pada rokok, kecuali: '
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Nikotin, Tar, Karbon monooksida
+  - Amonia, Formalin, Methanol
+  - Sukrosa, Maltosa, Laktosa
+  - Semua benar
+  answerIndex: 2

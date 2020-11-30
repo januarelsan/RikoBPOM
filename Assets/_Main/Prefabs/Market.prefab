@@ -210,6 +210,7 @@ MonoBehaviour:
   smokePush: {fileID: 0}
   pushedClip: {fileID: 8300000, guid: 56bcb6b27191e9341a24e9715ab3dbdd, type: 3}
   pushedDeadClip: {fileID: 8300000, guid: 00b8e04dc99e90449ad40c8074f3878e, type: 3}
+  live: 2
 --- !u!1 &9014035825734082842
 GameObject:
   m_ObjectHideFlags: 0

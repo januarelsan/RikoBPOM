@@ -19,7 +19,7 @@ MonoBehaviour:
   description: Penjaga Keluarga
   enemyM: 3
   friendM: 3
-  coinM: 0
+  coinM: 75
   backgrounds:
   - {fileID: 21300000, guid: 0de1cbb24ec7ca6499a5a6fd3170eb77, type: 3}
   - {fileID: 21300000, guid: 208a633e6a5603c4c84189e7b731c3eb, type: 3}

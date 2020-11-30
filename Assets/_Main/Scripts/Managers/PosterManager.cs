@@ -40,9 +40,9 @@ public class PosterManager : MonoBehaviour
     IEnumerator Loading(){
         
         loadingSlider.value = Random.Range(31f,50f);
-		yield return new WaitForSeconds(Random.Range(1f,3f));
+		yield return new WaitForSeconds(Random.Range(1f,2f));
         loadingSlider.value = Random.Range(51f,75f);
-		yield return new WaitForSeconds(Random.Range(1f,3f));
+		yield return new WaitForSeconds(Random.Range(1f,2f));
         loadingSlider.value = Random.Range(76f,100f);
         yield return new WaitForSeconds(1);
         

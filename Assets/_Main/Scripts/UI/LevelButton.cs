@@ -22,49 +22,49 @@ public class LevelButton : MonoBehaviour
 
         
 
-        if(level <= GameData.Instance.LevelOpened){
+        if(GameData.Instance.GetLevelOpened(level) == 1){
             GetComponent<Button>().interactable = true;
             GetComponent<Image>().sprite = containerSprites[1];
                         
             //open padlock
             transform.GetChild(2).gameObject.SetActive(false);
 
-            for (int i = 0; i < 3; i++)
-            {
-                transform.GetChild(1).GetChild(i).GetComponent<Image>().enabled = true;  
-                transform.GetChild(1).GetChild(i).GetComponent<Image>().sprite = yellowStarSprite;
-            }
-        }
-
-        if(level == GameData.Instance.LevelOpened) {
-            
-            Debug.Log(GameData.Instance.LevelOpened);
+            //enable brown star
             for (int i = 0; i < 3; i++)
             {
                 transform.GetChild(1).GetChild(i).GetComponent<Image>().enabled = true;  
                 transform.GetChild(1).GetChild(i).GetComponent<Image>().sprite = brownStarSprite;
             }
 
-            //Star                        
-            if(GameData.Instance.LevelOpenedEnemy == 1){
-                transform.GetChild(1).GetChild(0).GetComponent<Image>().enabled = true;                
-                transform.GetChild(1).GetChild(0).GetComponent<Image>().sprite = yellowStarSprite;
+
+            //3 star if level completed
+            if(GameData.Instance.GetLevelOpened(level + 1) == 1){
+                for (int i = 0; i < 3; i++)
+                {
+                    transform.GetChild(1).GetChild(i).GetComponent<Image>().enabled = true;  
+                    transform.GetChild(1).GetChild(i).GetComponent<Image>().sprite = yellowStarSprite;
+                }
             }
 
-            if(GameData.Instance.LevelOpenedFriend == 1){
 
-                transform.GetChild(1).GetChild(1).GetComponent<Image>().enabled = true;                
-                transform.GetChild(1).GetChild(1).GetComponent<Image>().sprite = yellowStarSprite;
-            }
+            //Star by mission
+            // if(GameData.Instance.GetLevelOpenedEnemy(level) == 1){
+            //     transform.GetChild(1).GetChild(0).GetComponent<Image>().enabled = true;                
+            //     transform.GetChild(1).GetChild(0).GetComponent<Image>().sprite = yellowStarSprite;
+            // }
 
-            if(GameData.Instance.LevelOpenedFriend == 1){
-                transform.GetChild(1).GetChild(2).GetComponent<Image>().enabled = true;                
-                transform.GetChild(1).GetChild(2).GetComponent<Image>().sprite = yellowStarSprite;
-            }
-        }
+            // if(GameData.Instance.GetLevelOpenedFriend(level) == 1){
 
-        
-        
+            //     transform.GetChild(1).GetChild(1).GetComponent<Image>().enabled = true;                
+            //     transform.GetChild(1).GetChild(1).GetComponent<Image>().sprite = yellowStarSprite;
+            // }
+
+            // if(GameData.Instance.GetLevelOpenedCoin(level) == 1){
+            //     transform.GetChild(1).GetChild(2).GetComponent<Image>().enabled = true;                
+            //     transform.GetChild(1).GetChild(2).GetComponent<Image>().sprite = yellowStarSprite;
+            // }
+        }                
+                
     }
 
     public void ToLevel(){

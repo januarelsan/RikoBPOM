@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 63
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Komplikasi kehamilan akibat ibu hamil yang terpapar asap rokok adalah:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Pendarahan vagina
+  - Gangguan pada plasenta
+  - Keguguran kandungan
+  - Semua benar
+  answerIndex: 3

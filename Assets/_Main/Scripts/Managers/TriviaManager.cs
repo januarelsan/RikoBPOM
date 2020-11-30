@@ -7,7 +7,7 @@ public class TriviaManager : MonoBehaviour
 {
     #pragma warning disable 0649
     private int questIndex;
-    private int[] randomIndex;
+    
     private int score;
 
     
@@ -39,19 +39,15 @@ public class TriviaManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        randomIndex = new int[questionDatas.Length];
-        for (int i = 0; i < questionDatas.Length; i++)
-		{			
-			randomIndex[i] = i;
-		}
+        
 
-        RandomIntArrayElement(randomIndex,20);
+        RandomArrayElement(questionDatas,50);
 
         SetQuest();
     }
 
 
-	void RandomIntArrayElement(int[] array, int randomAmount){
+	void RandomArrayElement(QuestionData[] array, int randomAmount){
                 
 		for (int i = 0; i < randomAmount; i++)
 		{			
@@ -69,7 +65,7 @@ public class TriviaManager : MonoBehaviour
         indexText.text = "Soal " + (questIndex+1) + "/5";
 
         //Set Quest Text
-        questText.text = questionDatas[randomIndex[questIndex]].quest;
+        questText.text = questionDatas[questIndex].quest;
 
         // Debug.Log("Soal No: " + randomIndex[questIndex]);
 
@@ -79,9 +75,9 @@ public class TriviaManager : MonoBehaviour
         }
 
 
-        for (int i = 0; i < questionDatas[randomIndex[questIndex]].options.Length; i++)        
+        for (int i = 0; i < questionDatas[questIndex].options.Length; i++)        
         {
-            choiceObjects[i].transform.GetChild(0).GetComponent<Text>().text = questionDatas[randomIndex[questIndex]].options[i];
+            choiceObjects[i].transform.GetChild(0).GetComponent<Text>().text = questionDatas[questIndex].options[i];
             choiceObjects[i].SetActive(false);
             choiceObjects[i].SetActive(true);
             questText.gameObject.SetActive(false);
@@ -90,7 +86,7 @@ public class TriviaManager : MonoBehaviour
     }
 
     public void Answering(int choiceIndex){
-        if(choiceIndex == questionDatas[randomIndex[questIndex]].answerIndex){
+        if(choiceIndex == questionDatas[questIndex].answerIndex){
             AnswerIsTrue(choiceIndex);
         } else {
             AnswerIsFalse(choiceIndex);

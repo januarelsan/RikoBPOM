@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 61
   m_EditorClassIdentifier: 
-  quest: 
+  quest: Kawasan Tanpa Rokok (KTR) adalah ...
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Ruangan atau area yang dinyatakan dilarang untuk kegiatan merokok atau kegiatan
+    memproduksi, menjual dan/atau mempromosikan rokok.
+  - Ruangan atau area yang dinyatakan dilarang untuk kegiatan merokok.
+  - Ruangan terbuka tanpa asap rokok
+  - Ruangan publik yang dinyatakan terlarang untuk memberi cemaran udara yang tidak
+    sehat seperti paparan asap rokok
+  answerIndex: 0

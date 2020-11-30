@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemySPGTrigger : MonoBehaviour, ITriggerable
 {
+    [SerializeField] private bool IsMafia;
+    [SerializeField] private GameObject smokeItem;
     [SerializeField] private GameObject ciggarateItem;
     [SerializeField] private Transform ciggaratePos;
     
@@ -15,8 +17,20 @@ public class EnemySPGTrigger : MonoBehaviour, ITriggerable
 
     public void SpawnCiggarate(){
         Instantiate(ciggarateItem, ciggaratePos.position, ciggaratePos.rotation);
-        Destroy(this.gameObject);
+        // Destroy(this.gameObject);
+        GetComponent<BoxCollider2D>().enabled = false;
+
+        if(IsMafia)
+            StartCoroutine(DoubleSpawn());
+        
     }
+
+    IEnumerator DoubleSpawn(){
+        yield return new WaitForSeconds(1f);
+        Instantiate(smokeItem, ciggaratePos.position, ciggaratePos.rotation);
+    }
+
+    
 
     
 }

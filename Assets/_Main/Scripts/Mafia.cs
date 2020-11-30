@@ -8,12 +8,17 @@ public class Mafia : MonoBehaviour
     [SerializeField] private ParticleSystem smokePush;
     [SerializeField] private AudioClip pushedClip;
     [SerializeField] private AudioClip pushedDeadClip;
+
+    [SerializeField] private EnemySPGTrigger enemySPGTrigger;
+
+    
+    
     private Rigidbody2D rigidbody2D;
     private BoxCollider2D boxCollider2D;
 
     
 
-    [SerializeField] private int live = 2;
+    [SerializeField] private int live;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,17 +38,33 @@ public class Mafia : MonoBehaviour
         live--;
         if(live > 0){
             
-            rigidbody2D.velocity = new Vector2(25,0);
-            smokePush.Play();
-            boxCollider2D.enabled = false;
-            GetComponent<AudioSource>().PlayOneShot(pushedClip);
+            if(rigidbody2D)
+                rigidbody2D.velocity = new Vector2(25,0);
+
+            if(smokePush)
+                smokePush.Play();
+
+            if(boxCollider2D)
+                boxCollider2D.enabled = false;
+
+            if(GetComponent<AudioSource>())
+                GetComponent<AudioSource>().PlayOneShot(pushedClip);
+
             StartCoroutine(StopVelocity());    
 
         }else{
-            smokePush.Play();
-            rigidbody2D.velocity = new Vector2(25,5);
-            boxCollider2D.enabled = false;
-            rigidbody2D.AddTorque(125);
+            if(smokePush)
+                smokePush.Play();
+
+            if(rigidbody2D)
+                rigidbody2D.velocity = new Vector2(25,5);
+
+            if(boxCollider2D)
+                boxCollider2D.enabled = false;
+
+            if(rigidbody2D)
+                rigidbody2D.AddTorque(125);
+                
             MissionManager.Instance.AddEnemyPoint(1);            
             SpawnGimmickEffect.Instance.SpawnGimmick(2);
 
@@ -58,42 +79,75 @@ public class Mafia : MonoBehaviour
     }
 
     IEnumerator DestroyMafia(){
-        boxCollider2D.enabled = false;
-        GetComponent<AudioSource>().PlayOneShot(pushedClip);
-        GetComponent<AudioSource>().PlayOneShot(pushedDeadClip);
+        if(boxCollider2D)
+            boxCollider2D.enabled = false;
+
+        if(GetComponent<AudioSource>()){
+            GetComponent<AudioSource>().PlayOneShot(pushedClip);
+            GetComponent<AudioSource>().PlayOneShot(pushedDeadClip);
+        }
         yield return new WaitForSeconds(2f);
         
         Destroy(this.gameObject);
     }
 
     IEnumerator StopVelocity(){
-        yield return new WaitForSeconds(1f);
-        rigidbody2D.velocity = Vector2.zero;
-        boxCollider2D.enabled = true;
+        yield return new WaitForSeconds(2f);
+
+        if(enemySPGTrigger){
+            enemySPGTrigger.SpawnCiggarate();            
+        }
+
+        // yield return new WaitForSeconds(0.5f);
+
+        if(boxCollider2D)
+                boxCollider2D.enabled = true;
+
+        if(rigidbody2D){
+
+            rigidbody2D.velocity = Vector2.zero;
+        }
+        if(boxCollider2D){
+            
+            
+            boxCollider2D.enabled = true;
+            
+        }
     }
 
-    void OnTriggerEnter2D(Collider2D col){        
-        if(col.gameObject.tag == "PushTrigger")   {
-            
-            // MissionManager.Instance.AddEnemyPoint(1);
-            // MissionManager.Instance.AddCoinPoint(10);
-            // SpawnGimmickEffect.Instance.SpawnGimmick(2);
-            // Destroy(gameObject);
+    void OnTriggerEnter2D(Collider2D col){    
+
+        
+
+        if(col.gameObject.tag == "PushTrigger")   {                    
             Pushed();
         }
 
         if(col.gameObject.tag == "DashCollider")   {
+
+            Debug.Log("Mafia Kena Dash");
             
-            smokePush.Play();
-            rigidbody2D.velocity = new Vector2(25,5);
-            rigidbody2D.AddTorque(125);
+            if(smokePush)
+                smokePush.Play();
+                
+            if(rigidbody2D){
+                rigidbody2D.velocity = new Vector2(25,5);
+                rigidbody2D.AddTorque(125);
+            }
+
             MissionManager.Instance.AddEnemyPoint(1);
-            MissionManager.Instance.AddCoinPoint(25);            
+            
+
+            if(!isSPG)
+                MissionManager.Instance.AddCoinPoint(200);            
+            else
+                MissionManager.Instance.AddCoinPoint(75);   
+
             SpawnGimmickEffect.Instance.SpawnGimmick(2);
             StartCoroutine(DestroyMafia());  
         }
         
     }
-
-    
 }
+    
+

@@ -11,6 +11,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     [SerializeField] private AudioClip hurtClip;
 
     [SerializeField] private PlayMakerFSM healthOnSliderFSM;
+    [SerializeField] private ParticleSystem smokeParticle;
     
     private float health = 100;
     
@@ -41,8 +42,8 @@ public class PlayerHealth : Singleton<PlayerHealth>
     }
 
     
-
     public void AfterHurting(){
+        Debug.Log("After Hurt");
         GetComponent<PlayerState>().SwitchState("Run");
     }   
 
@@ -73,6 +74,14 @@ public class PlayerHealth : Singleton<PlayerHealth>
         
     }
 
+    public void SubHealthByHole(float value){
+
+        healthOnSliderFSM.SendEvent("PunchScale");
+        FallingToHole();
+        health -= value;      
+                        
+    }
+
     void Hurting(){
         GetComponent<PlayerState>().SwitchState("Hurt");        
         SpawnGimmickEffect.Instance.SpawnGimmick(3);
@@ -82,6 +91,11 @@ public class PlayerHealth : Singleton<PlayerHealth>
     void OnlyHurting(){
         GetComponent<PlayerState>().SwitchState("Hurt");        
         // SpawnGimmickEffect.Instance.SpawnGimmick(3);
+    }
+
+    void FallingToHole(){
+        smokeParticle.Play();
+        transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
     }
 
 }

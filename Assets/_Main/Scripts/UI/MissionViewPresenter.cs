@@ -20,7 +20,7 @@ public class MissionViewPresenter : MonoBehaviour
         int x = GameData.Instance.SelectedLevel;
 
         episodeText.text =  "Episode " + (missionDatas[x].episode+1) + "/5";
-        descriptionText.text = missionDatas[x].description;
+        descriptionText.text = "Misi " + (missionDatas[x].level - (missionDatas[x].episode * 5) + 1) + "\n" +  missionDatas[x].description;
 
         if(!previewInGame){
             

@@ -30,7 +30,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b072d6cd68e15974f9262dfd7490eecb, type: 3}
   smokers: 3
   mafia: 0
-  spg: 3
+  spg: 4
   obstacles: 2
   dashItems: 1
   buildings: 0

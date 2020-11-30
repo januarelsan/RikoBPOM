@@ -6,8 +6,8 @@ public class Hole : MonoBehaviour, ICollectible
 {
     public void Collect(){      
         Debug.Log("Get Hit by Hole");
-        PlayerHealth.Instance.SubHealth(100);
+        PlayerHealth.Instance.SubHealthByHole(100);
         
-        Destroy(this.gameObject);
+        // Destroy(this.gameObject);
     }
 }

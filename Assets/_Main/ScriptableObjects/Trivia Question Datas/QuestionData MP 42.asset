@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46601469c2522b449495b6a7903595d, type: 3}
   m_Name: QuestionData MP 42
   m_EditorClassIdentifier: 
-  quest: 
+  quest: 'Penyakit kanker akibat merokok yang sering terjadi di sekitar daerah pernafasan
+    adalah:'
   options:
-  - 
-  - 
-  - 
-  - 
-  answerIndex: 7
+  - Kanker mulut
+  - Kanker tenggorokan
+  - Kanker paru-paru
+  - Semua jawaban benar
+  answerIndex: 3
