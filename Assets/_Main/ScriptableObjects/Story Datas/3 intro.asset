@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe6bc6e968d90d44881adb3b9dd2efe, type: 3}
+  m_Name: 3 intro
+  m_EditorClassIdentifier: 
+  level: 3
+  sprites:
+  - {fileID: 21300000, guid: 8cd861c6809a59d499153ae928bb1170, type: 3}
+  captions:
+  - Halo, sekarang aku sudah duduk di sekolah menengah. Di usia ini aku memang sedang
+    senang bereksplorasi, mencoba hal baru, dan memperbanyak teman dan kegiatan.
+    Seru sekali memang rasanya menjadi remaja aktif, gaul, dan berprestasi.
+  - Saat pulang sekolah, aku melihat gerak gerik teman-temanku yang mencurigakan.
+    Rupanya mereka pergi ke warung dekat sekolah untuk merokok. Hmm, aku geram sekali
+    melihatnya. Di antara mereka juga ada temanku yang tadi tidak masuk. Kukira dia
+    sakit, rupanya membolos.
+  - Padahal mereka tentu tahu juga akibat negatif dari merokok. Tidak bisa dibiarkan,
+    aku mau ajak sebanyak-banyak teman agar tak terpengaruh oleh efek buruk rokok
+    agar kami bisa berprestasi bersama.
+  storyType: 0

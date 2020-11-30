@@ -15,9 +15,27 @@ EditorBuildSettings:
     path: Assets/_Main/Scenes/Game.unity
     guid: b44d57f5bcdc68c4aa452ef2abff2848
   - enabled: 1
-    path: Assets/_Main/Scenes/Story.unity
+    path: Assets/_Main/Scenes/IntroStory.unity
     guid: 153d299626cfbfd44859eed3bdf5436c
   - enabled: 1
     path: Assets/_Main/Scenes/Trivia.unity
     guid: 0845a845efbf9ed4983208d51a3f3386
+  - enabled: 1
+    path: Assets/_Main/Scenes/Badge.unity
+    guid: a6c2c1f34b81e2140ab5beefb8512f3a
+  - enabled: 1
+    path: Assets/_Main/Scenes/Poster.unity
+    guid: e092417f4d40c664b9a2fbb48327f8b3
+  - enabled: 1
+    path: Assets/_Main/Scenes/Mission.unity
+    guid: df25345b6a5f5284ebab1182e103553a
+  - enabled: 1
+    path: Assets/_Main/Scenes/ResultStory.unity
+    guid: 0451ed2d21dbf654fb56caff9bc86aa4
+  - enabled: 1
+    path: Assets/_Main/Scenes/Tutorial.unity
+    guid: 785210f92063d5b42b91434a9d9269a7
+  - enabled: 0
+    path: Assets/_Main/Scenes/SettingMission.unity
+    guid: 2b2c59f9817b8ee4ca0be715ded3565b
   m_configObjects: {}

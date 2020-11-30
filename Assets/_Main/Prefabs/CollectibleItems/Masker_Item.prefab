@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 2959638087619440286}
   - component: {fileID: 2959638087619440480}
   - component: {fileID: 493647102}
-  - component: {fileID: 493647103}
+  - component: {fileID: 8214012464481077285}
   m_Layer: 0
   m_Name: Masker_Item
-  m_TagString: CollectibleItem
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -537,7 +537,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &493647103
+--- !u!114 &8214012464481077285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -546,10 +546,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2959638087619440285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db80f561345929d48bb385949d7728e5, type: 3}
+  m_Script: {fileID: 11500000, guid: f6bb94c6a5f07dc4383bb594c9fc7d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
 --- !u!1001 &2959638087835509884
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectibleItem : MonoBehaviour
 {
-    [SerializeField] private int type;
+    [SerializeField] private int itemType;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class CollectibleItem : MonoBehaviour
         
     }
 
-    public int GetType(){
-        return type;
+    public int GetItemType(){
+        return itemType;
     }
 }

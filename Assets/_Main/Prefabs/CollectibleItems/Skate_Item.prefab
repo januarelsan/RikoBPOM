@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 3644215208360139316}
   - component: {fileID: 3644215208360139722}
   - component: {fileID: 5138116389645890850}
-  - component: {fileID: 5138116389645890861}
+  - component: {fileID: 171233254}
   m_Layer: 0
   m_Name: Skate_Item
-  m_TagString: CollectibleItem
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3644215208360139319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 220.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7952510913086065818}
@@ -537,7 +537,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &5138116389645890861
+--- !u!114 &171233254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -546,10 +546,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3644215208360139319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db80f561345929d48bb385949d7728e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 58512205f5a8997448b54b9255779fd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 3
 --- !u!1001 &7952510913086464380
 PrefabInstance:
   m_ObjectHideFlags: 0

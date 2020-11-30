@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe6bc6e968d90d44881adb3b9dd2efe, type: 3}
+  m_Name: 1 intro
+  m_EditorClassIdentifier: 
+  level: 1
+  sprites:
+  - {fileID: 21300000, guid: 1fc99b343d6d6af448bd6684172836f5, type: 3}
+  captions:
+  - Kenalkan, wanita hamil itu adalah ibuku dan pria yang berada disebelahnya adalah
+    Ayahku. Oya, aku sendiri adalah Riko. Ini cerita sebelum adikku dilahirkan.
+  - Asap rokok adalah musuh terbesar bagi janin. Meski sudah ada tanda Kawasan Tanpa
+    Rokok dekat Puskesmas, masih saja ditemukan banyak yang merokok seakan tak peduli.
+  - Aku dan ayahku berusaha menjaga ibu agar sebisa mungkin terhindar dari asap rokok.
+    Ini semua agar adikku bisa lahir dengan sehat dan normal. Bantu aku yaa
+  storyType: 0

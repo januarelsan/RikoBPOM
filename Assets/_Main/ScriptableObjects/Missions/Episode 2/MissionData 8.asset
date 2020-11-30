@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7052ee45e64cd4f428a1f7fa4fe4d665, type: 3}
+  m_Name: MissionData 8
+  m_EditorClassIdentifier: 
+  happyStoryData: {fileID: 0}
+  sadStoryData: {fileID: 0}
+  episode: 1
+  level: 8
+  description: Pahlawan Kota
+  enemyM: 17
+  friendM: 11
+  coinM: 800
+  backgrounds:
+  - {fileID: 21300000, guid: c16a08127823a1d45941f45e5b5fa0c7, type: 3}
+  - {fileID: 21300000, guid: c16a08127823a1d45941f45e5b5fa0c7, type: 3}
+  - {fileID: 21300000, guid: c16a08127823a1d45941f45e5b5fa0c7, type: 3}
+  walls:
+  - {fileID: 21300000, guid: 8b0b6a5b39b668249a1f9432d0afe4fb, type: 3}
+  - {fileID: 21300000, guid: b072d6cd68e15974f9262dfd7490eecb, type: 3}
+  - {fileID: 21300000, guid: 8b0b6a5b39b668249a1f9432d0afe4fb, type: 3}
+  smokers: 5
+  mafia: 2
+  spg: 5
+  obstacles: 1
+  dashItems: 1
+  buildings: 2
+  items: 5
+  professors: 1

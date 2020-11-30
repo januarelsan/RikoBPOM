@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jumping : Singleton<Jumping>
+public class Jumping : MonoBehaviour
 {
     public float playerUpwardForce;
+    public AudioClip jumpClip;
 
     private Rigidbody2D rb2;
+    private bool isGrounded = true;
     
 
     void Awake(){
@@ -26,17 +28,19 @@ public class Jumping : Singleton<Jumping>
 
     public void Jump(){
         if(GetComponent<PlayerState>().GetState().ToString() == "Run" || GetComponent<PlayerState>().GetState().ToString() == "Slide" ){
+            isGrounded = false;
             GetComponent<PlayerState>().SwitchState("Jump");
             rb2.AddForce(new Vector3(0,playerUpwardForce,0), ForceMode2D.Impulse);
-            GetComponent<Animator>().SetTrigger("Jump");
+            GetComponent<AudioSource>().PlayOneShot(jumpClip);
         }
     }
 
     
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.gameObject.tag == "Ground"){
-            GetComponent<PlayerState>().SwitchState("Default");
+        if(col.gameObject.tag == "Ground" && !isGrounded && GetComponent<PlayerState>().GetState().ToString() == "Jump"){
+            isGrounded = true;
+            GetComponent<PlayerState>().SwitchState("Run");
         }
     }
     

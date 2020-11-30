@@ -12,6 +12,9 @@ TagManager:
   - PushTrigger
   - Profesor
   - Smoker
+  - SmokeItem
+  - DashCollider
+  - BGCollider
   layers:
   - Default
   - TransparentFX
